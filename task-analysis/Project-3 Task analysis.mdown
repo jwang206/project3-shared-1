@@ -7,7 +7,7 @@
 
 ####1. Login [Myiit portal ](https://my.iit.edu/)###
 
-![Myiit](image/login.png "Myiit")
+![Myiit](../image/login.png "Myiit")
 ###2. Navigate to Finances tab
 ![Finances](../image/finances_tab.png "Finances")
 
