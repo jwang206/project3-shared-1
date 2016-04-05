@@ -20,9 +20,8 @@ a.button {
 
 
 .wrapper {
-	 background-color: rgba(125,125,125,0.5)   ;
-
- position: absolute;
+  background-color: rgba(125,125,125,0.5)   ;
+  position: absolute;
   top: 60%;
   left: 25%;
   width: 50%;
@@ -53,6 +52,7 @@ form {
   padding: 20px 0;
   position: relative;
   z-index: 2;
+
 }
 form input {
   -webkit-appearance: none;
@@ -60,17 +60,17 @@ form input {
           appearance: none;
   outline: 0;
   border: 1px solid rgba(255, 255, 255, 0.4);
-  background-color: rgba(300, 300, 300, 0.2);
+  background-color: black;
   width: 250px;
   border-radius: 3px;
   padding: 10px 15px;
-  margin: 0 auto 10px auto;
+  margin: 0 auto 15px auto;
   display: block;
   text-align: center;
   font-size: 18px;
-  color: white;
-  -webkit-transition-duration: 0.25s;
-          transition-duration: 0.25s;
+  color: black;
+  -webkit-transition-duration: 0.20s;
+          transition-duration: 0.2s;
   font-weight: 300;
 }
 form input:hover {
@@ -89,14 +89,21 @@ form button {
   background-color: white;
   border: 0;
   padding: 10px 15px;
+  margin: 0 auto 15px auto;
   color: red;
-  border-radius: 3px;
+  border-radius: 30px;
   width: 250px;
   cursor: pointer;
   font-size: 18px;
   -webkit-transition-duration: 0.25s;
           transition-duration: 0.25s;
 }
+
 form button:hover {
-  background-color: #f5f7f9;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+h1{
+	margin: 0 auto -10px auto;
+	
 }
