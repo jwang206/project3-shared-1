@@ -1,0 +1,193 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*page-wide settings*/
+html{
+	font-family:Helvetica,sans-serif,arial;
+}
+
+.flexbox{
+	align-items: center;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.section{
+	margin-bottom: 10%;
+}
+
+/*header style*/
+header{
+	position: relative;
+	left: 0;
+	top: 0;
+}
+#myiit{
+	position: relative;
+	top: 0;
+	left: 0;
+}
+#extend{
+	height: 0px;
+}
+
+
+/*navigatiion bar style*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    border: 1px solid white;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+         clear: both;
+}
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+.active {
+    background-color: #4CAF50;
+}
+
+
+/*first section style*/
+h3{
+	font-size: 150%;
+}
+
+#welcome {
+	margin-top: 5%;
+	width: 80%;
+	line-height: 1.5;
+}
+
+/*second section - Ventra*/
+
+
+
+
+/*third section - Calender*/
+#calender iframe{
+	width: 100%;
+}
+
+
+/*last section - phonebook style*/
+
+.block{
+	display: block;
+}
+fieldset{
+
+	border: 0.5px solid;
+	padding: 10px;
+	width: 200px;
+	height: auto;
+	display: flex;
+}
+
+section{
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 560px){
+	li {
+    float: left;
+    border: none;
+}
+}
+
+@media screen and (min-width: 804px){
+
+header{
+	display: flex;
+}
+section #name{
+	display: flex;
+	flex-direction: column;
+}
+#myiit{
+	width: 804px;
+}
+#extend{
+	background: url('image/header_bk copy.gif');
+	width: 100%;
+	height: 101px;
+
+}
+}
+
+
+
+
+
+

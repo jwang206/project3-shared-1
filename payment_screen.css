@@ -1,0 +1,292 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom Site Styles */
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  background: white;
+  padding: 2.5% 2.5%;
+  /* Prevent text-size adjustments during orientation changes on mobile devices */
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-size: 1.25em;
+  line-height: 1.34em;
+  }
+
+#content-wrapper {
+  color: #222; 
+  background: #FAFAFA; /* A little grayer than true white */
+  border-radius: 0.83333em;
+  -moz-border-radius: 0.83333em;
+}
+
+#credit-card-images {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  box-shadow: 0.45em 0.45em 0.5em black;
+  -moz-box-shadow: 0.45em 0.45em 0.5em black;
+  -webkit-box-shadow: 0.45em 0.45em 0.5em black;
+  -khtml-box-shadow: 0.45em 0.45em 0.5em black;
+  padding-top: 0.34em;
+}
+
+p {
+  line-height: 1.0437583893em;
+  padding: 0.5em 5% .5em 5%;
+  font-size: 1em;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.528em;
+  font-weight: bold;
+  padding: 0.5em 5% .5em 5%;
+  text-align: center;
+}
+
+#account-statement
+{
+  opacity:0.7;
+  text-align: center;
+  color: black;
+}
+
+#account-statement table
+{
+  border-collapse: collapse;
+  margin: auto;
+}
+
+#account-statement th, td
+{
+  border: 1px black solid; 
+}
+
+#table_title
+{
+  font-size: 1.25em;
+  padding: 0.5em 5% .5em 5%;
+  text-align: center;
+}
+
+.table-text, .table_head, .data
+{
+  width: 10em;
+  font-family: 'Oswald', sans-serif;
+  font:bolder;
+  font-size: 1em;
+  padding: 0.5em 5% .5em 5%;
+}
+
+.form-container {
+  padding: 0.5em 0em 0.5em 0em;
+  text-align:center;
+}
+
+#CardNameText, #CardNumberText, #CardTypeOption, #ExpireMonthOption, #ExpireYearOption, #CVVText{
+  width: 100%;
+  height: 2.85em;
+  -webkit-border-radius: 0.625em;
+    -moz-border-radius: 0.625em;
+  border:0.0625em solid transparent;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #DDD;
+  font-size: inherit;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+#send{
+  width: 100%;
+  height: 2.85em;
+  border:0.0625em solid transparent;
+  border-radius: 0.625em;
+  font:bolder;
+  font-size: 1.25em;
+  display: block;
+}
+
+input,label,legend,form {
+  margin:0 auto;
+  font-family: times-serif;
+  font-size: 1em;
+  width: auto;
+  line-height: 1.0437583893em;
+  padding: 0.5em 2.5% .5em 2.5%;
+}
+
+form p {
+  padding: 0.5em 0.5em .5em 0.5em;
+  font-size: 1em;
+  text-align:center;
+}
+
+
+header{
+	position: relative;
+	left: 0;
+	top: 0;
+}
+
+#myiit{
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+#extend{
+	height: 0px;
+}
+
+#main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+
+#main-nav li {
+    border: 1px solid white;
+}
+
+#main-nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+         clear: both;
+}
+
+/* Change the link color to #111 (black) on hover */
+#main-nav li a:hover {
+    background-color: #111;
+}
+.active {
+    background-color: #4CAF50;
+}
+
+#account-statement {
+    display: none;
+}
+  
+#mouseRegion {
+    background-color: #ccc;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.5em 0 .5em 0.5em;
+    display: none;
+  }
+
+fieldset {
+  padding: 1em;
+  border:1px solid;
+  }
+
+@media screen and (min-width: 560px){
+  #main-nav	li {
+      float: left;
+      border: none;
+  }
+
+  #mouseRegion {
+    width: 15.625em;
+    display:block;
+  }
+
+  #CardNameText, #CardNumberText, #CardTypeOption, #CVVText, #send{
+  width: 50%;
+  }
+
+  #ExpireMonthOption, #ExpireYearOption {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 804px){
+
+	header{
+		display: flex;
+	}
+
+	#myiit{
+		width: 804px;
+	}
+	#extend{
+		background: url('image/header_bk copy.gif');
+		width: 100%;
+		height: 101px;
+	}
+  #mouseRegion {
+    width: 15.625em;
+    display:block;
+  }
+  
+  #CardNameText, #CardNumberText, #CardTypeOption, #CVVText, #send{
+  width: 50%;
+  }
+
+  #ExpireMonthOption, #ExpireYearOption {
+    width: 40%;
+  }
+}
+
+
+
+
+
+
