@@ -31,9 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
+
 blockquote, q {
 	quotes: none;
 }
@@ -133,20 +131,36 @@ h3{
 
 /*last section - phonebook style*/
 
+#phone_book #role{
+	line-height: 2;
+}
+
+#phone_book #name{
+	margin-top: 10px;
+}
+#phone_book #name input{
+	margin-bottom: 15px;
+}
 .block{
 	display: block;
 }
 fieldset{
-
 	border: 0.5px solid;
-	padding: 10px;
+	padding-left: 50px;
+	padding-bottom: 20px;
 	width: 200px;
 	height: auto;
 	display: flex;
+	background:lightgray;
 }
-
 section{
 	display: block;
+}
+
+#submit_button:hover{
+	background:lightblue;
+	border: none;
+	border-radius: 3px;
 }
 
 
