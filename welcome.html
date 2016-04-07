@@ -3,7 +3,7 @@
 <head>
  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="screen.css">
+    <link rel="stylesheet" type="text/css" href="welcome_screen.css">
 	<title>Welcome</title>
 
 </head>
@@ -25,7 +25,8 @@
 	</ul>
 </nav>
 
-
+<div class="flexbox" id="parent">
+<div class="section" id="welcome">
 <h3>Welcome to the IIT portal for all Newly Admitted Students.</h3>
 <p>As a student at IIT, your myIIT account will be your primary vehicle to:</p>
 <ol>
@@ -40,28 +41,35 @@
 <li>chat with fellow students about the progress of their IPRO
 and much more</li>
 </ol>
+</div>
+
 <div class="section" id="upass">
 	Activate your UPass and Register @ <a href="https://www.ventrachicago.com/">Ventra</a>
 </div>
 
-<div class="section" id="calender"  http://www.plus2net.com/html_tutorial/html_calendar.php?prm=04&chm=1>
-	<div about="/university-calendar" typeof="foaf:Document" role="article" class="ds-1col node node-page article view-mode-full clearfix">
-
-  
-  <div class="field field-name-body field-type-text-with-summary field-label-hidden view-mode-full"><div class="field-items"><div class="field-item even" property="content:encoded"><p class="wrapper-43"><iframe src="https://www.google.com/calendar/embed?src=calendar%40iit.edu&amp;ctz=America/Chicago" width="570" height="500" frameborder="0" scrolling="no"></iframe></p></div></div></div></div>
+<div class="section" id="calender">
+<iframe src="https://www.google.com/calendar/embed?src=calendar%40iit.edu&amp;ctz=America/Chicago" width="570" height="500" frameborder="0" scrolling="no"></iframe>
 </div>
 
 <form class="section" id="phone_book">
+<fieldset>
+<legend>Phone Book</legend>
+ 	<section id="role">
 	Search by Role
-	<input type="radio" name="role" value="Faculty"> Faculty
-  	<input type="radio" name="role" value="Student"> Student
-  	First Name 
+	<label class="block"><input type="radio" name="role" value="Faculty"> Faculty</label>
+  	<label class="block"><input type="radio" name="role" value="Student"> Student</label>
+  	 </section>
+  	<section id="name">
+  	<p>First Name</p>
   	<input type="text" name="firstname">  	
-  	Last Name
+  	<p>Last Name</p>
   	<input type="text" name="lastname">
+  	</section>
+  	<input type="submit" value="Search" >
+  	</fieldset>
 </form>
 
-
+</div>
 </body>
 
 
