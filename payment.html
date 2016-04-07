@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+	    <link rel="stylesheet" type="text/css" href="screen_hong.css">
+		<title>Payment</title>
+	</head>
+
+	<body>
+		<div id="content-wrapper">
+			<header>
+				<img src="image/header_bk.gif" name="header_img" id="myiit">
+				<div id="extend"></div>
+			</header>
+
+			<nav>
+				<ul>
+					<li><a href=""> Welcome </a></li>
+					<li><a href=""> Academics </a></li>
+					<li><a href=""> Student Life </a></li>
+					<li><a href=""> Finances </a></li>
+					<li><a href=""> Libray </a></li>
+					<li><a href=""> Research </a></li>
+				</ul>
+			</nav>
+
+			<div id="account-statement">
+				<table>
+					<tr>
+						<th id="table_title" colspan="5">Student Account -- 2016 Fall</th>	
+					</tr>	
+						<tr>
+							<th>Account Type</th>
+							<th id="Venus" title="Expenses or losses in your account">Debit</th>
+							<th id="Credit" title="Deposited in your account">Credit</th>
+							<th id="Balance" title="Money you need to pay">Balance</th>
+						</tr>	
+
+						<tr id="tuition">
+							<th class="table_head">Tuition</th>
+							<td class="data">$43,500</td>
+							<td class="data"></td>	
+							<td class="data">$43,500</td>
+						</tr>
+
+						<tr id="scholarships">
+							<th class="table_head">Scholarships</th>
+							<td class="data"></td>
+							<td class="data">$21,000</td>
+							<td class="data">$22,500</td>
+						</tr>
+
+						<tr id="grants">
+							<th class="table_head">Grants</th>
+							<td class="data">$11,000</td>
+							<td class="data"></td>
+							<td class="data">$11,500</td>
+						</tr>
+
+						<tr id="loans">
+							<th class="table_head">Student Loans</th>
+							<td class="data">$5,000</td>
+							<td class="data"></td>
+							<td class="data">$6,500</td>	
+						</tr>
+
+						<tr id="debts">
+							<th class="table_head">Previous Debts</th>
+							<td class="data">$1,000</td>
+							<td class="data"></td>
+							<td class="data">$7,500</td>
+						</tr>
+
+						<tr id="paid">
+							<th class="table_head">Already Paid</th>
+							<td class="data">$0</td>
+							<td class="data"></td>
+							<td class="data">$7,500</td>
+						</tr>
+				</table>
+
+				<h3><a href="#account-payment">Hide the statemt</a></h3>
+			</div>
+
+			<h3><a href="#account-statement">Show Current Account Statment</a></h3>
+
+			<div id="account-payment">
+				<form name="aspnetForm" method="post" action="/Events/Register/RegSummaryPayment.aspx?rc=e7fc7c0b-1f8e-4939-b1fc-98b9fb53a52a" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm" style="height: 100%; vertical-align: top;">
+				<h2 class="reg-sub-header">Payment Method</h2>
+
+
+			</div>
+
+		</div>
+
+	</body>
+
+</html>
