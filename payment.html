@@ -3,26 +3,22 @@
 	<head>
 	 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
-<<<<<<< HEAD
-	    <link rel="stylesheet" type="text/css" href="screen_hong.css">
-		<title>Payment</title>
-=======
 	    <link rel="stylesheet" type="text/css" href="payment_screen.css">
    		<script src="js/myscript.js"></script>
    		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 		<title>Payment</title>
 		<script type="text/javascript">
-
-		$(document).ready(function() {
-		    $('#mouseRegion').hover(
-		        function() { $('#account-statement').show() },
-		        function() { $('#account-statement').hide() }
-		    );  
-		});
-
+			function setVisibility(id) {
+				if(document.getElementById('mouseRegion').value=='Hide Account Details'){
+				document.getElementById('mouseRegion').value = 'Show Account Details';
+				document.getElementById(id).style.display = 'none';
+				}else{
+				document.getElementById('mouseRegion').value = 'Hide Account Details';
+				document.getElementById(id).style.display = 'inline';
+				}
+			}
 		</script>
-
->>>>>>> 723ef5a6f590fcbf00ad8f1c91c0951d9ac24ce5
+	
 	</head>
 
 	<body>
@@ -32,11 +28,7 @@
 				<div id="extend"></div>
 			</header>
 
-<<<<<<< HEAD
-			<nav>
-=======
 			<nav id="main-nav">
->>>>>>> 723ef5a6f590fcbf00ad8f1c91c0951d9ac24ce5
 				<ul>
 					<li><a href=""> Welcome </a></li>
 					<li><a href=""> Academics </a></li>
@@ -47,20 +39,9 @@
 				</ul>
 			</nav>
 
-<<<<<<< HEAD
-			<div id="account-statement">
-				<table>
-					<tr>
-						<th id="table_title" colspan="5">Student Account -- 2016 Fall</th>	
-					</tr>	
-						<tr>
-							<th>Account Type</th>
-							<th id="Venus" title="Expenses or losses in your account">Debit</th>
-							<th id="Credit" title="Deposited in your account">Credit</th>
-							<th id="Balance" title="Money you need to pay">Balance</th>
-=======
 			<h3>Account Payment</h3>
-			<div id="mouseRegion">Show/Hide Account Details</div>
+
+			<input type=button name=type id='mouseRegion' value='Show Account Details' onclick="setVisibility('account-statement');";> 
 
 			<div id="account-statement">
 				<table>
@@ -72,7 +53,6 @@
 							<th class="table-text" title="Expenses or losses in your account">Debit</th>
 							<th class="table-text" title="Deposited in your account">Credit</th>
 							<th class="table-text" title="Money you need to pay">Balance</th>
->>>>>>> 723ef5a6f590fcbf00ad8f1c91c0951d9ac24ce5
 						</tr>	
 
 						<tr id="tuition">
@@ -91,13 +71,8 @@
 
 						<tr id="grants">
 							<th class="table_head">Grants</th>
-<<<<<<< HEAD
-							<td class="data">$11,000</td>
-							<td class="data"></td>
-=======
 							<td class="data"></td>
 							<td class="data">$11,000</td>
->>>>>>> 723ef5a6f590fcbf00ad8f1c91c0951d9ac24ce5
 							<td class="data">$11,500</td>
 						</tr>
 
@@ -123,17 +98,6 @@
 						</tr>
 				</table>
 
-<<<<<<< HEAD
-				<h3><a href="#account-payment">Hide the statemt</a></h3>
-			</div>
-
-			<h3><a href="#account-statement">Show Current Account Statment</a></h3>
-
-			<div id="account-payment">
-				<form name="aspnetForm" method="post" action="/Events/Register/RegSummaryPayment.aspx?rc=e7fc7c0b-1f8e-4939-b1fc-98b9fb53a52a" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm" style="height: 100%; vertical-align: top;">
-				<h2 class="reg-sub-header">Payment Method</h2>
-
-=======
 			</div>
 
 			<p>Amount Due: $7,500</p>
@@ -261,7 +225,6 @@
 					</fieldset>
 
 		        </form>	
->>>>>>> 723ef5a6f590fcbf00ad8f1c91c0951d9ac24ce5
 
 			</div>
 

@@ -16,35 +16,35 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Custom Site Styles */
@@ -175,19 +175,19 @@ form p {
 
 
 header{
-	position: relative;
-	left: 0;
-	top: 0;
+  position: relative;
+  left: 0;
+  top: 0;
 }
 
 #myiit{
-	position: relative;
-	top: 0;
-	left: 0;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 #extend{
-	height: 0px;
+  height: 0px;
 }
 
 #main-nav ul {
@@ -238,7 +238,7 @@ fieldset {
   }
 
 @media screen and (min-width: 560px){
-  #main-nav	li {
+  #main-nav li {
       float: left;
       border: none;
   }
@@ -259,18 +259,18 @@ fieldset {
 
 @media screen and (min-width: 804px){
 
-	header{
-		display: flex;
-	}
+  header{
+    display: flex;
+  }
 
-	#myiit{
-		width: 804px;
-	}
-	#extend{
-		background: url('image/header_bk copy.gif');
-		width: 100%;
-		height: 101px;
-	}
+  #myiit{
+    width: 804px;
+  }
+  #extend{
+    background: url('image/header_bk copy.gif');
+    width: 100%;
+    height: 101px;
+  }
   #mouseRegion {
     width: 15.625em;
     display:block;
@@ -284,9 +284,3 @@ fieldset {
     width: 40%;
   }
 }
-
-
-
-
-
-
