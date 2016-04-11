@@ -5,19 +5,7 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
 	    <link rel="stylesheet" type="text/css" href="payment_screen.css">
    		<script src="js/myscript.js"></script>
-   		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 		<title>Payment</title>
-		<script type="text/javascript">
-
-		$(document).ready(function() {
-		    $('#mouseRegion').hover(
-		        function() { $('#account-statement').show() },
-		        function() { $('#account-statement').hide() }
-		    );  
-		});
-
-		</script>
-
 	</head>
 
 	<body>
@@ -39,7 +27,8 @@
 			</nav>
 
 			<h3>Account Payment</h3>
-			<div id="mouseRegion">Show/Hide Account Details</div>
+
+			<input type=button name=type id='mouseRegion' value='Show Account Details' onclick="setVisibility('account-statement');";> 
 
 			<div id="account-statement">
 				<table>
