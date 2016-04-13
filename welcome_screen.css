@@ -31,9 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
+
 blockquote, q {
 	quotes: none;
 }
@@ -54,17 +52,23 @@ html{
 }
 
 .flexbox{
-	align-items: center;
+	
 	width: 100%;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 }
+
 .section{
 	margin-bottom: 10%;
+	border-bottom: solid lightgray 1px;
 }
 
 /*header style*/
 header{
+	height: 101px;
+	background-image: url(image/header_bk.gif);
+	background-repeat: no-repeat;
 	position: relative;
 	left: 0;
 	top: 0;
@@ -100,7 +104,7 @@ li a {
     text-decoration: none;
          clear: both;
 }
-/* Change the link color to #111 (black) on hover */
+/* Change the link color to #111 (black) when hover */
 li a:hover {
     background-color: #111;
 }
@@ -108,16 +112,20 @@ li a:hover {
     background-color: #4CAF50;
 }
 
+/*layout*/
+#child1-welcome, #child2-upass, #child4-phone_book{
+	align-self: center;
+}
 
 /*first section style*/
 h3{
 	font-size: 150%;
 }
 
-#welcome {
+#child1-welcome {
 	margin-top: 5%;
 	width: 80%;
-	line-height: 1.5;
+	line-height: 1.3;
 }
 
 /*second section - Ventra*/
@@ -126,45 +134,70 @@ h3{
 
 
 /*third section - Calender*/
-#calender iframe{
-	width: 100%;
+#child3-calender iframe{
+	margin-left: 5%;
+	width: 90%;
 }
 
 
 /*last section - phonebook style*/
 
+#child4-phone_book #role{
+	line-height: 2;
+}
+
+
+#phone_book #name input{
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
 .block{
 	display: block;
 }
 fieldset{
-
 	border: 0.5px solid;
-	padding: 10px;
+	padding-left: 50px;
+	padding-bottom: 20px;
 	width: 200px;
 	height: auto;
 	display: flex;
+	background:lightgray;
 }
-
 section{
 	display: block;
 }
 
+#submit_button:hover{
+	background:lightblue;
+	border: none;
+	border-radius: 3px;
+}
 
 
 
 
+@media screen and (min-width: 400px){
+	
+}
 
 
 
 
+@media screen and (min-width: 600px){
+	#child1-welcome {
+	margin-top: 30px;
+	line-height: 1.5;
+	}
 
-
-@media screen and (min-width: 560px){
 	li {
     float: left;
     border: none;
 }
+
+
+
 }
+
 
 @media screen and (min-width: 804px){
 
@@ -182,7 +215,13 @@ section #name{
 	background: url('image/header_bk copy.gif');
 	width: 100%;
 	height: 101px;
+	margin-left: 800px;
 
+}
+
+#child3-calender iframe{
+	width: 800px;
+	height: 500px;
 }
 }
 
