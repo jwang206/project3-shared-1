@@ -68,7 +68,7 @@ html {
   -moz-border-radius: 0.83333em;
 }
 
-img {
+#payment-form img {
   max-width: 100%;
   box-shadow: 0.45em 0.45em 0.5em black;
   -moz-box-shadow: 0.45em 0.45em 0.5em black;
