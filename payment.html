@@ -15,7 +15,7 @@
 						<div id="extend"></div>
 			</header>
 
-			<nav id="main-nav">
+			<nav>
 				<ul>
 					<li><a href=""> Welcome </a></li>
 					<li><a href=""> Academics </a></li>
@@ -28,68 +28,60 @@
 
 			<h3>Account Payment</h3>
 
-			<div id="statement-details">
-
-			<input type=button name=type id='mouseRegion' value='Show Account Details' onclick="setVisibility('account-statement');"> 
-
 			<div id="account-statement">
-				<table>
-					<tr>
-						<td id="table_title" colspan="4">Account Statement -- 2016 Fall</td>	
-					</tr>	
-						<tr>
-							<th>Account Type</th>
-							<th class="table-text" title="Expenses or losses in your account">Debit</th>
-							<th class="table-text" title="Deposited in your account">Credit</th>
-							<th class="table-text" title="Money you need to pay">Balance</th>
-						</tr>	
 
-						<tr id="tuition">
-							<th class="table_head">Tuition</th>
-							<td class="data">$43,500</td>
-							<td class="data"></td>	
-							<td class="data">$43,500</td>
-						</tr>
-
-						<tr id="scholarships">
-							<th class="table_head">Scholarships</th>
-							<td class="data"></td>
-							<td class="data">$21,000</td>
-							<td class="data">$22,500</td>
-						</tr>
-
-						<tr id="grants">
-							<th class="table_head">Grants</th>
-							<td class="data"></td>
-							<td class="data">$11,000</td>
-							<td class="data">$11,500</td>
-						</tr>
-
-						<tr id="loans">
-							<th class="table_head">Student Loans</th>
-							<td class="data">$5,000</td>
-							<td class="data"></td>
-							<td class="data">$6,500</td>	
-						</tr>
-
-						<tr id="debts">
-							<th class="table_head">Previous Debts</th>
-							<td class="data">$1,000</td>
-							<td class="data"></td>
-							<td class="data">$7,500</td>
-						</tr>
-
-						<tr id="paid">
-							<th class="table_head">Already Paid</th>
-							<td class="data">$0</td>
-							<td class="data"></td>
-							<td class="data">$7,500</td>
-						</tr>
-				</table>
-			</div>
+			<input type=button name=type id='mouseRegion' value='Show Account Details' onclick="setVisibility('account-details');"> 
 
 			<p>Amount Due: $7,500</p>
 			<p>Tuition & Fees Due in Full: Sept 6, 2016</p>
+
+			<div id="account-details">
+
+				<table>
+					<tr>
+						<td id="table_title" colspan="2">Account Statement -- 2016 Fall</td>	
+					</tr>	
+						<tr>
+							<th class="table-text">Account Type</th>
+							<th class="table-text">Dollar ($)</th>
+						</tr>	
+
+						<tr id="tuition">
+							<th class="table-text">Tuition</th>
+							<td class="debt">$43,500</td>
+						</tr>
+
+						<tr id="scholarships">
+							<th class="table-text">Scholarships</th>
+							<td class="credit">$21,000</td>
+						</tr>
+
+						<tr id="grants">
+							<th class="table-text">Grants</th>
+							<td class="credit">$11,000</td>
+						</tr>
+
+						<tr id="loans">
+							<th class="table-text">Student Loans</th>
+							<td class="credit">$5,000</td>
+						</tr>
+
+						<tr id="debts">
+							<th class="table-text">Previous Debts</th>
+							<td class="debt">$1,000</td>
+						</tr>
+
+						<tr id="paid">
+							<th class="table-text">Already Paid</th>
+							<td class="credit">$0</td>
+						</tr>
+
+						<tr id="balance">
+							<th class="table_head">Balance</th>
+							<td class="debt">$7,500</td>
+						</tr>
+				</table>
+			</div>
 
 			</div>
 
@@ -99,8 +91,9 @@
 					<fieldset>
 						<legend>Payment</legend>
 
+						<P>Credit Card:</P>
+
 						<div id="credit-card-images">
-							<H3>Credit Card:
 							<img title="Visa" alt="Visa" src="image/ccimg_1.gif" />
 							&nbsp;
 							<img title="MasterCard" alt="MasterCard" src="image/ccimg_2.gif" />&nbsp;
@@ -110,7 +103,6 @@
 							&nbsp;
 							<img title="Diners Club" alt="Diners Club" src="image/ccimg_16.gif" />
 							&nbsp;
-							</H3>
 						</div>
 
 						<div class="form-container">
@@ -134,7 +126,10 @@
                         	<input name="CardNumber" type="text" maxlength="16" id="CardNumber" />
                         </div>
 
-                        <div class="form-container"><p>Expiration Date:</p>
+                        <p>Expiration Date:</p>
+
+                        <div class="form-container">
+                    
                                 <label for="ExpireMonth">Month</label>
                                 <select name="ExpireMonth" id="ExpireMonth">
 									<option value="1">January</option>
@@ -150,6 +145,9 @@
 									<option value="11"> November</option>
 									<option value="12"> December</option>
 								</select>
+						</div>
+
+						<div class="form-container">
 	                            <label for="ExpireYear">Year</label>
 	                            <select name="ExpireYear" id="ExpireYear">
 										<option value="2016">2016</option>
