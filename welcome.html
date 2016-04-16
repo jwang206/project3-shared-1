@@ -12,12 +12,12 @@
       </header>
       <nav>
          <ul>
-            <li><a href=""> Welcome </a></li>
-            <li><a href=""> Academics </a></li>
-            <li><a href=""> Student Life </a></li>
-            <li><a href=""> Finances </a></li>
-            <li><a href=""> Libray </a></li>
-            <li><a href=""> Research </a></li>
+            <li><a href="welcome.html"> Welcome </a></li>
+            <li><a href="#"> Academics </a></li>
+            <li><a href="#"> Student Life </a></li>
+            <li><a href="#"> Finances </a></li>
+            <li><a href="#"> Libray </a></li>
+            <li><a href="#"> Research </a></li>
          </ul>
       </nav>
       <div class="flexbox" id="parent">
@@ -41,30 +41,32 @@
          </div>
          <div class="secondflexbox">
             <div class="section" id="child3-calender">
-               <iframe src="https://www.google.com/calendar/embed?src=calendar%40iit.edu&amp;ctz=America/Chicago"  height="300" frameborder="0" scrolling="no"></iframe>
+               <iframe src="https://www.google.com/calendar/embed?src=calendar%40iit.edu&amp;ctz=America/Chicago" ></iframe>
             </div>
+
+            <div>
+           	<h4>Phone Book</h4>
             <form class="section" id="child4-phone_book">
-               <fieldset>
-                  <legend>Phone Book</legend>
-                  <section id="role">
+                  <div id="role">
                      Search by Role
                      <label class="block"><input type="radio" name="role" value="Faculty"> Faculty</label>
                      <label class="block"><input type="radio" name="role" value="Student"> Student</label>
-                  </section>
-                  <section id="name">
-                     <p>First Name</p>
+                  </div>
+                  <div id="name">
+                     First Name
                      <input type="text" name="firstname">  	
-                     <p>Last Name</p>
+                     Last Name
                      <input type="text" name="lastname">
-                  </section>
+                  </div>
                   <input id="submit_button" type="submit" value="Search" >
-               </fieldset>
+       
             </form>
          </div>
       </div>
+      </div>
       <footer>
          <a id="top" onmouseover="window.status=''; return true;" href="#TOP"><B>Top</B></a>
-         <a id="iit" href="http://www.iit.edu"><img width="179" title="Illinois Institute of Technology" src="image/foot_logo.gif" height="52" border="0" alt="Illinois Institute of Technology"></a>
+         <a id="iit" href="http://www.iit.edu"><img title="Illinois Institute of Technology" src="image/foot_logo.gif" alt="Illinois Institute of Technology"></a>
       </footer>
    </body>
 </html>
