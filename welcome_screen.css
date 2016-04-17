@@ -52,9 +52,19 @@ html{
 
 .flexbox, .secondflexbox{
 	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 
@@ -81,8 +91,15 @@ header{
 }
 
 ol{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 footer{
 	margin-top: 5%;
@@ -90,8 +107,17 @@ footer{
 	padding-top: 20px;
 	border-top: solid 2px;
 	
+	display: -webkit-box;
+	
+	display: -webkit-flex;
+	
+	display: -ms-flexbox;
+	
 	display: flex;
-	justify-content: flex-end;
+	-webkit-box-pack: end;
+	-webkit-justify-content: flex-end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
 }
 
 footer #top{
@@ -133,7 +159,9 @@ li a:hover {
 
 /*layout*/
 #child-welcome, #child-phone_book{
-	align-self: center;
+	-webkit-align-self: center;
+	    -ms-flex-item-align: center;
+	        align-self: center;
 }
 
 /*first section style*/
@@ -220,8 +248,14 @@ h3{
 	line-height: 1.5;
 	}
 	ul{
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: center;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 	}
 	li {
     float: left;
@@ -246,13 +280,27 @@ ul{
 
 
 section #name{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 
 header{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 }
 
 #extend{
@@ -275,21 +323,35 @@ header{
 @media screen and (min-width: 960px){
 
 	.flexbox{
-		justify-content: center;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 	}
 	#child-welcome{
 		width: 650px;
 	}
 	.secondflexbox{
 		width: 94%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
 	padding-left: 5%;
 
 }
 	.secondflexbox #child-phone_book{
-			align-self: flex-start;
+			-webkit-align-self: flex-start;
+			    -ms-flex-item-align: start;
+			        align-self: flex-start;
 	
 	}
 }
@@ -303,6 +365,4 @@ header{
 
 
 }
-
-
 
