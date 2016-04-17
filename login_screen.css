@@ -16,35 +16,35 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 /* *********************************************************************************************/
 body {
@@ -52,14 +52,6 @@ background-color: #f0f0f0;
 background-repeat: no-repeat;
 background-position:center center; 
 
-}
-
-header{
-	height: 101px;
-	background-repeat: no-repeat;
-	position: relative;
-	left: 0;
-	top: 0;
 }
 
 
@@ -71,37 +63,30 @@ a.button {
 }
 
 
-img{
+#iit_logo{
 display: block;
   margin: 0 auto;
   width: 350px;
+  margin-bottom: 50px;
+  margin-top: 10%;
 }
 
 
 .container {
-  width: 350px;
- background-color: lightgrey   ;
-  margin: 0 auto;
-  padding: 30px 0;
-  height: 100%;
+  display: block;
+  width: 90%;
+  border: white solid 0.5px;
+ background-color: lightgrey;
+  padding: 20px 0;
   text-align: center;
-   border-radius: 10px;
+  border-radius: 8px;
 }
 
-.container h1 {
-  font-size: 40px;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-  -webkit-transition-timing-function: ease-in-put;
-          transition-timing-function: ease-in-put;
-  font-weight: 200;
-}
+
 form {
   padding: 20px 0;
-  position: relative;
-  z-index: 2;
-
 }
+
 form input {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -109,7 +94,7 @@ form input {
   outline: 0;
   border: 1px solid rgba(255, 255, 255, 0.4);
   background-color: white;
-  width: 45%;
+  width: 55%;
   border-radius: 3px;
   padding: 10px 15px;
   margin: 0 auto 15px auto;
@@ -117,18 +102,15 @@ form input {
   text-align: center;
   font-size: 18px;
   color: black;
-  -webkit-transition-duration: 0.20s;
-          transition-duration: 0.2s;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
   font-weight: 300;
 }
+
 form input:hover {
   background-color: rgba(255, 255, 255, 0.4);
 }
-form input:focus {
-  background-color: white;
-  width: 45%;
-  color: black;
-}
+
 form button {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -139,16 +121,31 @@ form button {
   padding: 10px 15px;
   margin: 0 auto 15px auto;
   color: red;
-  border-radius: 30px;
-  width: 25%;
+  border-radius: 5px;
+  width: 37%;
   cursor: pointer;
   font-size: 18px;
-  -webkit-transition-duration: 0.25s;
-          transition-duration: 0.25s;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  margin-top: 5%;
 }
 
 form button:hover {
   background-color: rgba(255, 255, 255, 0.4);
+}
+
+form a{
+  text-decoration: none;
+}
+@media screen and (min-width: 350px){
+.container {
+  width: 350px;
+ margin: 0 auto;
+}
+
+#iit_logo{
+  margin-top: 150px;
+}
 }
 
 
