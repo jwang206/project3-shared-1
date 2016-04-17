@@ -1,0 +1,498 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/**************************************************************************
+(reset)*/
+
+                                /* login page */
+
+body {
+background-color: #f0f0f0;
+background-repeat: no-repeat;
+background-position:center center; 
+}
+
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+}
+
+
+#iit_logo{
+display: block;
+  margin: 0 auto;
+  width: 350px;
+  margin-bottom: 50px;
+  margin-top: 10%;
+}
+
+
+.container {
+  display: block;
+  width: 90%;
+  border: white solid 0.5px;
+ background-color: lightgrey;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 8px;
+}
+
+
+.loginbox {
+  padding: 20px 0;
+}
+
+.loginbox input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: white;
+  width: 55%;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin: 0 auto 15px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: black;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+  font-weight: 300;
+}
+
+form input:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.loginbox button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  background-color: white;
+  border: 0;
+  padding: 10px 15px;
+  margin: 0 auto 15px auto;
+  color: red;
+  border-radius: 5px;
+  width: 37%;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  margin-top: 5%;
+}
+
+.loginbox button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.loginbox a{
+  text-decoration: none;
+}
+
+/***************************************************************************/
+                              /*welcome page*/
+
+/*page-wide settings*/
+html{
+  font-family:Helvetica,sans-serif,arial;
+}
+
+.flexbox, .secondflexbox{
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+
+.section{
+  margin-bottom: 5%;
+}
+
+
+header{
+  height: 101px;
+  background-image: url(image/header_bk.gif);
+  background-repeat: no-repeat;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+#myiit{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#extend{
+  height: 0px;
+}
+
+ol{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+footer{
+  margin-top: 5%;
+  padding-right: 5%;
+  padding-top: 20px;
+  border-top: solid 2px;
+  
+  display: -webkit-box;
+  
+  display: -webkit-flex;
+  
+  display: -ms-flexbox;
+  
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+footer #top{
+  margin-right: 3em;
+}
+
+footer #iit{
+  border: none;
+}
+/*navigatiion bar style*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    border: 1px solid white;
+}
+
+li a {
+
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+         clear: both;
+}
+/* Change the link color to #111 (black) when hover */
+li a:hover {
+    background-color: #111;
+}
+.active {
+    background-color: #4CAF50;
+}
+
+/*layout*/
+#child-welcome, #child-phone_book{
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+}
+
+/*first section style*/
+h3{
+  font-size: 150%;
+}
+
+#child-welcome {
+  
+  margin-top: 5%;
+  width: 80%;
+  line-height: 1.3;
+}
+
+
+
+
+
+
+/*third section - Calender*/
+#child-calender iframe{
+  margin-left: 5%;
+  width: 90%;
+  height: 300px;
+  border: none;
+}
+
+
+/*last section - phonebook style*/
+#child-phone_book #title{
+  font-weight: bolder;
+  line-height: 2;
+}
+
+#child-phone_book #name{
+  margin-top: 20px;
+}
+#child-phone_book form #name input{ 
+  width: 80%;
+  border-radius:3px;
+  border: none;
+  border:solid black 1.5px;
+  padding:2%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+.block{
+  display: block;
+  margin-top: 5px;
+}
+
+#child-phone_book form{
+  margin: 0 auto;
+  padding-left: 30px;
+  border: 0.5px solid;
+  padding-top: 25px;
+  width: 200px;
+  height: 250px;
+  background:lightgray;
+}
+#submit_button{
+  margin-top: 20px;
+  width:30%;
+}
+
+#submit_button:hover{
+  background:lightblue;
+  border: none;
+  border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************************************************************/
+                               /*Media Query*/
+@media screen and (min-width: 350px){
+.container {
+  width: 350px;
+ margin: 0 auto;
+}
+
+#iit_logo{
+  margin-top: 150px;
+}
+}
+
+@media screen and (min-width: 616px){
+  #child-welcome {
+  margin-top: 30px;
+  line-height: 1.5;
+  }
+  ul{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  li {
+    float: left;
+    border: none;
+}
+  
+  #child-calender iframe{
+    height:500px;
+  }
+
+}
+
+
+@media screen and (min-width: 804px){
+ul{
+  display:block;
+  padding-left: 5%;
+}
+ #child-phone_book {
+  margin-top: 5%;
+ }
+
+
+section #name{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#extend{
+  background: url('image/header_bk copy.gif');
+  width: 100%;
+  height: 101px;
+  margin-left: 800px;
+
+}
+
+
+
+#child-calender iframe{
+    height:700px;
+  }
+
+
+}
+
+@media screen and (min-width: 960px){
+
+  .flexbox{
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #child-welcome{
+    width: 650px;
+  }
+  .secondflexbox{
+    width: 94%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding-left: 5%;
+
+}
+  .secondflexbox #child-phone_book{
+      -webkit-align-self: flex-start;
+          -ms-flex-item-align: start;
+              align-self: flex-start;
+  
+  }
+}
+
+
+@media screen and (min-width: 1200px){
+  .flexbox{
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+
+}
+
+
+
+
+
