@@ -51,7 +51,6 @@ html{
 }
 
 .flexbox, .secondflexbox{
-	
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -164,12 +163,15 @@ h3{
 
 
 /*last section - phonebook style*/
-
+#child-phone_book #title{
+	font-weight: bolder;
+	line-height: 2;
+}
 
 #child-phone_book #name{
 	margin-top: 20px;
 }
-#child-phone_book #name input{	
+#child-phone_book form #name input{	
 	width: 80%;
 	border-radius:3px;
 	border: none;
@@ -185,7 +187,7 @@ h3{
 	margin-top: 5px;
 }
 
-#child-phone_book{
+#child-phone_book form{
 	margin: 0 auto;
 	padding-left: 30px;
 	border: 0.5px solid;
@@ -238,7 +240,7 @@ ul{
 	display:block;
 	padding-left: 5%;
 }
- #child-phone_book{
+ #child-phone_book {
  	margin-top: 5%;
  }
 
