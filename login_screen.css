@@ -48,11 +48,9 @@ table {
 }
 /* *********************************************************************************************/
 body {
-   background-color: #f0f0f0;
+background-color: #f0f0f0;
 background-repeat: no-repeat;
 background-position:center center; 
-background-size:50%;
-  margin-top: 25%;
 
 }
 
@@ -69,33 +67,27 @@ a.button {
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
-
     text-decoration: none;
-    color: initial;
 }
 
 
-
-
-.wrapper {
- 
-  top: 60%;
-  width: 350px;
-  height: 400px;
+img{
+display: block;
   margin: 0 auto;
-  display: block;
-  margin-top: -200px;
-  overflow: hidden;
+  width: 350px;
 }
+
 
 .container {
+  width: 350px;
  background-color: lightgrey   ;
   margin: 0 auto;
-  padding: 80px 0;
+  padding: 30px 0;
   height: 100%;
   text-align: center;
-   border-radius: 60px;
+   border-radius: 10px;
 }
+
 .container h1 {
   font-size: 40px;
   -webkit-transition-duration: 1s;
@@ -159,7 +151,4 @@ form button:hover {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
-h1{
-	margin: 0 auto -10px auto;
-	
-}
+
