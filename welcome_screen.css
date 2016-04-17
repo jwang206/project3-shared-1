@@ -1,4 +1,49 @@
-  
+  /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
 /*page-wide settings*/
 html{
@@ -36,6 +81,10 @@ header{
 	height: 0px;
 }
 
+ol{
+	display: flex;
+	flex-direction: column;
+}
 footer{
 	margin-top: 5%;
 	padding-right: 5%;
@@ -84,7 +133,7 @@ li a:hover {
 }
 
 /*layout*/
-#child1-welcome, #child2-upass, #child4-phone_book{
+#child-welcome, #child-phone_book{
 	align-self: center;
 }
 
@@ -93,7 +142,8 @@ h3{
 	font-size: 150%;
 }
 
-#child1-welcome {
+#child-welcome {
+	
 	margin-top: 5%;
 	width: 80%;
 	line-height: 1.3;
@@ -105,7 +155,7 @@ h3{
 
 
 /*third section - Calender*/
-#child3-calender iframe{
+#child-calender iframe{
 	margin-left: 5%;
 	width: 90%;
 	height: 300px;
@@ -116,10 +166,10 @@ h3{
 /*last section - phonebook style*/
 
 
-#child4-phone_book #name{
+#child-phone_book #name{
 	margin-top: 20px;
 }
-#child4-phone_book #name input{	
+#child-phone_book #name input{	
 	width: 80%;
 	border-radius:3px;
 	border: none;
@@ -134,11 +184,8 @@ h3{
 	display: block;
 	margin-top: 5px;
 }
-.secondflexbox h4{
-	text-align: center;
-	margin-left: -140px;
-}
-#child4-phone_book{
+
+#child-phone_book{
 	margin: 0 auto;
 	padding-left: 30px;
 	border: 0.5px solid;
@@ -166,7 +213,7 @@ h3{
 
 
 @media screen and (min-width: 616px){
-	#child1-welcome {
+	#child-welcome {
 	margin-top: 30px;
 	line-height: 1.5;
 	}
@@ -178,11 +225,10 @@ h3{
     float: left;
     border: none;
 }
-
-#child3-calender iframe{
-
-	height: 500px;
-}
+	
+	#child-calender iframe{
+		height:500px;
+	}
 
 }
 
@@ -192,7 +238,7 @@ ul{
 	display:block;
 	padding-left: 5%;
 }
- #child4-phone_book{
+ #child-phone_book{
  	margin-top: 5%;
  }
 
@@ -215,43 +261,46 @@ header{
 
 }
 
-#child3-calender iframe{
-	width: 600px;
-	height: 500px;
-}
 
-#child3-calender{
-	margin: 0 auto;
-}
 
-#child3-calender iframe{
-	margin: 0;
-}
+#child-calender iframe{
+		height:700px;
+	}
+
+
 }
 
 @media screen and (min-width: 960px){
+
+	.flexbox{
+		justify-content: center;
+	}
+	#child-welcome{
+		width: 650px;
+	}
 	.secondflexbox{
-		width: 95%;
+		width: 94%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around;
-	margin: 0 auto;
+	padding-left: 5%;
 
 }
-	.secondflexbox #child4-phone_book{
+	.secondflexbox #child-phone_book{
 			align-self: flex-start;
-			margin-top: 0;
+	
 	}
 }
 
 
 @media screen and (min-width: 1200px){
-
 	.flexbox{
 		width: 1200px;
 		margin: 0 auto;
 	}
+
+
 }
+
 
 
