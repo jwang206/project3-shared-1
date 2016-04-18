@@ -82,7 +82,7 @@ p {
   font-size: 1em;
 }
 
-h3 {
+#content-wrapper h3 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.528em;
   font-weight: bold;
@@ -236,7 +236,7 @@ li a:hover {
 
 
 <<<<<<< HEAD
-form p {
+#payment-form p {
   padding: 0.5em 0.5em .5em 0.5em;
   font-size: 1em;
   text-align:center;
