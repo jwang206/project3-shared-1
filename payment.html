@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html class="payment">
-	<head>
-	 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
-	    <link rel="stylesheet" type="text/css" href="screen.css">
-   		<script src="js/myscript.js"></script>
-   		<script src="js/shoestring.js"></script>
-		<title>Payment</title>
-	</head>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="screen.css">
+      <script src="js/myscript.js"></script>
+      <script src="js/shoestring.js"></script>
+    <title>Payment</title>
+  </head>
 
-	<body>
-	<header>
+  <body>
+  <header>
          <div id="extend"></div>
       </header>
       <nav>
@@ -23,104 +23,75 @@
             <li><a href="#"> Research </a></li>
          </ul>
       </nav>
-		<div id="content-wrapper">
-			
+    <div id="content-wrapper">
+      
 
-			<h3>Account Payment</h3>
+      <h3>Account Payment</h3>
 
-			<div id="account-statement">
+      <div id="account-statement">
 
-			<input type=button name=type id='mouseRegion' value='Show Account Details' onclick="setVisibility('account-details');"> 
+      <input type=button name=type id='mouseRegion' value='Show Account Details' onclick="setVisibility('account-details');"> 
 
-			<p>Amount Due: $7,500</p>
-			<p>Tuition & Fees Due in Full: Sept 6, 2016</p>
+      <p>Amount Due: $7,500</p>
+      <p>Tuition & Fees Due in Full: Sept 6, 2016</p>
 
-			<div id="account-details">
+      <div id="account-details">
 
-				<table id="center">
-					<tr>
-						<td id="table_title" colspan="2">Account Statement -- 2016 Fall</td>	
-					</tr>	
-						<tr>
-							<th class="table-text">Account Type</th>
-							<th class="table-text">Dollar ($)</th>
-						</tr>	
+        <table id="center">
+          <tr>
+            <td id="table_title" colspan="2">Account Statement -- 2016 Fall</td>  
+          </tr> 
+            <tr>
+              <th class="table-text">Account Type</th>
+              <th class="table-text">Dollar ($)</th>
+            </tr> 
 
-						<tr id="tuition">
-							<th class="table-text">Tuition</th>
-							<td class="debt">$43,500</td>
-						</tr>
+            <tr id="tuition">
+              <th class="table-text">Tuition</th>
+              <td class="debt">$43,500</td>
+            </tr>
 
-						<tr id="scholarships">
-							<th class="table-text">Scholarships</th>
-							<td class="credit">$21,000</td>
-						</tr>
+            <tr id="scholarships">
+              <th class="table-text">Scholarships</th>
+              <td class="credit">$21,000</td>
+            </tr>
 
-						<tr id="grants">
-							<th class="table-text">Grants</th>
-							<td class="credit">$11,000</td>
-						</tr>
+            <tr id="grants">
+              <th class="table-text">Grants</th>
+              <td class="credit">$11,000</td>
+            </tr>
 
-						<tr id="loans">
-							<th class="table-text">Student Loans</th>
-							<td class="credit">$5,000</td>
-						</tr>
+            <tr id="loans">
+              <th class="table-text">Student Loans</th>
+              <td class="credit">$5,000</td>
+            </tr>
 
-						<tr id="debts">
-							<th class="table-text">Previous Debts</th>
-							<td class="debt">$1,000</td>
-						</tr>
+            <tr id="debts">
+              <th class="table-text">Previous Debts</th>
+              <td class="debt">$1,000</td>
+            </tr>
 
-						<tr id="paid">
-							<th class="table-text">Already Paid</th>
-							<td class="credit">$0</td>
-						</tr>
+            <tr id="paid">
+              <th class="table-text">Already Paid</th>
+              <td class="credit">$0</td>
+            </tr>
 
-						<tr id="balance">
-							<th class="table_head">Balance</th>
-							<td class="debt">$7,500</td>
-						</tr>
-				</table>
-			</div>
+            <tr id="balance">
+              <th class="table_head">Balance</th>
+              <td class="debt">$7,500</td>
+            </tr>
+        </table>
+      </div>
 
-			</div>
+      </div>
 
-			<div id="account-payment">
-				
-<<<<<<< HEAD
-<<<<<<< HEAD
-				<form id="payment-form" action="#" method="post" enctype="multipart/form-data">
-					<fieldset>
-						<legend>Payment</legend>
-
-						<div id="credit-card-images">
-							<P>Credit Card
-							<img title="Visa" alt="Visa" src="image/ccimg_1.gif" />
-							&nbsp;
-							<img title="MasterCard" alt="MasterCard" src="image/ccimg_2.gif" />
-							&nbsp;
-							<img title="American Express" alt="American Express" src="image/ccimg_4.gif" />
-							&nbsp;
-							<img title="Discover" alt="Discover" src="image/ccimg_8.gif" />
-							&nbsp;
-							<img title="Diners Club" alt="Diners Club" src="image/ccimg_16.gif" />
-							&nbsp;
-							</P>
-						</div>
-
-						<div class="form-container">
-=======
-=======
->>>>>>> 924008b54664a978056d6ad03044d601e732bcad
+      <div id="account-payment">
+        
       <form id="payment-form" name="paymentForm" action="#" method="post" onsubmit="return(validate());" >
                <fieldset>
                   <legend>Payment</legend>
 
                   <div class="form-container">
-<<<<<<< HEAD
->>>>>>> 99f15d94c51d302378399788392205cbdc9424aa
-=======
->>>>>>> 924008b54664a978056d6ad03044d601e732bcad
                             <label for="CardName">Name on Card:</label>
                             <input name="CardName" type="text" id="CardName" />
                         </div>
@@ -128,17 +99,6 @@
                         <div class="form-container">
                             <label for="CardType">Type:</label>
                             <select name="CardType" id="CardType">
-<<<<<<< HEAD
-<<<<<<< HEAD
-								<option selected="selected" value="1">Visa</option>
-								<option value="2">MasterCard</option>
-								<option value="4">American Express</option>
-								<option value="8">Discover</option>
-								<option value="16">Diners Club</option>
-							</select>
-=======
-=======
->>>>>>> 924008b54664a978056d6ad03044d601e732bcad
                               <option value="-1" selected>choose yours</option>
                         <option value="1">Visa</option>
                         <option value="2">MasterCard</option>
@@ -146,23 +106,11 @@
                         <option value="8">Discover</option>
                         <option value="16">Diners Club</option>
                      </select>
-<<<<<<< HEAD
->>>>>>> 99f15d94c51d302378399788392205cbdc9424aa
-=======
->>>>>>> 924008b54664a978056d6ad03044d601e732bcad
                         </div>
 
                         <div class="form-container">
                             <label for="CardNumber">Credit Card Number:</label>
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        	<input name="CardNumber" type="text" maxlength="16" id="CardNumber" />
-=======
                            <input name="CardNumber" type="text" maxlength="16" id="CardNumber" />
->>>>>>> 99f15d94c51d302378399788392205cbdc9424aa
-=======
-                           <input name="CardNumber" type="text" maxlength="16" id="CardNumber" />
->>>>>>> 924008b54664a978056d6ad03044d601e732bcad
                         </div>
 
                         <p>Expiration Date:</p>
@@ -171,54 +119,6 @@
                     
                                 <label for="ExpireMonth">Month</label>
                                 <select name="ExpireMonth" id="ExpireMonth">
-<<<<<<< HEAD
-<<<<<<< HEAD
-									<option value="1">January</option>
-									<option value="2"> February</option>
-									<option value="3"> March</option>
-									<option value="4"> April</option>
-									<option value="5"> May</option>
-									<option value="6"> June</option>
-									<option value="7"> July</option>
-									<option value="8"> August</option>
-									<option value="9"> September</option>
-									<option value="10"> October</option>
-									<option value="11"> November</option>
-									<option value="12"> December</option>
-								</select>
-						</div>
-
-						<div class="form-container">
-	                            <label for="ExpireYear">Year</label>
-	                            <select name="ExpireYear" id="ExpireYear">
-										<option value="2016">2016</option>
-										<option value="2017">2017</option>
-										<option value="2018">2018</option>
-										<option value="2019">2019</option>
-										<option value="2020">2020</option>
-										<option value="2021">2021</option>
-										<option value="2022">2022</option>
-										<option value="2023">2023</option>
-										<option value="2024">2024</option>
-										<option value="2025">2025</option>
-										<option value="2026">2026</option>
-										<option value="2027">2027</option>
-										<option value="2028">2028</option>
-										<option value="2029">2029</option>
-										<option value="2030">2030</option>
-										<option value="2031">2031</option>
-										<option value="2032">2032</option>
-										<option value="2033">2033</option>
-										<option value="2034">2034</option>
-										<option value="2035">2035</option>
-										<option value="2036">2036</option>
-									</select>
-						</div>
-
-                        <div class="form-container">
-                            <label for="CVVNumber">Card Verification Value Code (CVV):</label>
-                        	<input name="CVVNumber" type="text" maxlength="3" id="CVVNumber" />
-=======
                                  <option value="-1" selected>choose yours</option>
                            <option value="1">January</option>
                            <option value="2"> February</option>
@@ -266,56 +166,6 @@
                         <div class="form-container">
                             <label for="CVVNumber">Card Verification Value Code (CVV):</label>
                            <input name="CVVNumber" type="text" maxlength="3" id="CVVNumber" />
->>>>>>> 99f15d94c51d302378399788392205cbdc9424aa
-=======
-                                 <option value="-1" selected>choose yours</option>
-                           <option value="1">January</option>
-                           <option value="2"> February</option>
-                           <option value="3"> March</option>
-                           <option value="4"> April</option>
-                           <option value="5"> May</option>
-                           <option value="6"> June</option>
-                           <option value="7"> July</option>
-                           <option value="8"> August</option>
-                           <option value="9"> September</option>
-                           <option value="10"> October</option>
-                           <option value="11"> November</option>
-                           <option value="12"> December</option>
-                        </select>
-                  </div>
-
-                  <div class="form-container">
-                               <label for="ExpireYear">Year</label>
-                               <select name="ExpireYear" id="ExpireYear">
-                                    <option value="-1" selected>choose yours</option>
-                              <option value="2016">2016</option>
-                              <option value="2017">2017</option>
-                              <option value="2018">2018</option>
-                              <option value="2019">2019</option>
-                              <option value="2020">2020</option>
-                              <option value="2021">2021</option>
-                              <option value="2022">2022</option>
-                              <option value="2023">2023</option>
-                              <option value="2024">2024</option>
-                              <option value="2025">2025</option>
-                              <option value="2026">2026</option>
-                              <option value="2027">2027</option>
-                              <option value="2028">2028</option>
-                              <option value="2029">2029</option>
-                              <option value="2030">2030</option>
-                              <option value="2031">2031</option>
-                              <option value="2032">2032</option>
-                              <option value="2033">2033</option>
-                              <option value="2034">2034</option>
-                              <option value="2035">2035</option>
-                              <option value="2036">2036</option>
-                           </select>
-                  </div>
-
-                        <div class="form-container">
-                            <label for="CVVNumber">Card Verification Value Code (CVV):</label>
-                           <input name="CVVNumber" type="text" maxlength="3" id="CVVNumber" />
->>>>>>> 924008b54664a978056d6ad03044d601e732bcad
                         </div>
   
                   <input type="submit" name="submit" id="send" value="Submint Payment"/>
@@ -324,23 +174,14 @@
 
               </form>   
 
-			</div>
+      </div>
 
-		</div>
-		<footer>
+    </div>
+    <footer>
          <a id="top" onmouseover="window.status=''; return true;" href="#TOP"><B>Top</B></a>
          <a id="iit" href="http://www.iit.edu"><img title="Illinois Institute of Technology" src="image/foot_logo.gif" alt="Illinois Institute of Technology"></a>
       </footer>
-	</body>
+  </body>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-</html>
-=======
 </html>
 
->>>>>>> 99f15d94c51d302378399788392205cbdc9424aa
-=======
-</html>
-
->>>>>>> 924008b54664a978056d6ad03044d601e732bcad
