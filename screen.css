@@ -410,6 +410,13 @@ margin: 5% auto;
   border-radius: 0.83333em;
   -moz-border-radius: 0.83333em;
 }
+.form-container{
+display:block;
+}
+
+.form-container #CVVNumber{
+    width: 4em;
+}
 
 #payment-form img {
   max-width: 100%;
