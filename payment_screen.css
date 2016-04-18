@@ -68,10 +68,6 @@ html {
   -moz-border-radius: 0.83333em;
 }
 
-#credit-card-images {
-  text-align: center;
-}
-
 img {
   max-width: 100%;
   box-shadow: 0.45em 0.45em 0.5em black;
@@ -131,7 +127,6 @@ h3 {
 
 .form-container {
   padding: 0.5em 0em 0.5em 0em;
-  text-align:center;
 }
 
 #CardNameText, #CardNumberText, #CardTypeOption, #ExpireMonthOption, #ExpireYearOption, #CVVText{
@@ -170,7 +165,6 @@ input,label,legend,form {
 form p {
   padding: 0.5em 0.5em .5em 0.5em;
   font-size: 1em;
-  text-align:center;
 }
 
 
@@ -249,12 +243,16 @@ fieldset {
   }
 
   #CardNameText, #CardNumberText, #CardTypeOption, #CVVText, #send{
-  width: 50%;
+  width: 15.625em;
   }
 
   #ExpireMonthOption, #ExpireYearOption {
     width: 40%;
   }
+}
+
+ul#form-payment li {
+    display:inline;
 }
 
 @media screen and (min-width: 804px){
