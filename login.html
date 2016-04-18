@@ -3,15 +3,42 @@
    <head>
       <meta charset="UTF-8">
       <link rel="stylesheet" href="screen.css">
+      <script src="js/myscript.js"></script>
       <title>IIT Login</title>
+      <script type="text/javascript">
+         // login validation
+         var attempt = 3; // Variable to count number of attempts.
+         // Below function Executes on click of login button.
+         function validate(){
+         var username = document.getElementById("username").value;
+         var password = document.getElementById("password").value;
+         if ( username !== "" && password !== ""){
+         window.location = "welcome.html"; // Redirecting to other page.
+         return false;
+         }
+         else{
+         attempt --;// Decrementing by one.
+         alert("You have left "+attempt+" attempt;");
+         // Disabling fields after 3 attempts.
+         if( attempt == 0){
+         document.getElementById("username").disabled = true;
+         document.getElementById("password").disabled = true;
+         document.getElementById("submit").disabled = true;
+         return false;
+         }
+         }
+         }
+      </script>
    </head>
+
    <body>
       <img id="iit_logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/Illinois_Institute_of_Technology_(emblem).svg/1280px-Illinois_Institute_of_Technology_(emblem).svg.png" alt="Illinois_Institute_of_Technology" >
+
       <div class="container">
          <form class="loginbox">
-            <input type="text" placeholder="Username" required>
-            <input type="password" placeholder="Password" required>
-            <button type="submit" id="login-button">Login</button>
+            <input type="text" name="username" id="username" placeholder="Username" required />
+            <input type="password" name="password" id="password" placeholder="Password" required />
+            <input type="button" value="Login" id="login-button" onclick="validate()"/>
             <p><a href="https://my.iit.edu/cp/myqa/answer/start">Forgot Password?</a></p>
          </form>
       </div>
