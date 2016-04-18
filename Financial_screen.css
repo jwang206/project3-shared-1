@@ -48,8 +48,37 @@ table {
 }
 
 
+/*page-wide settings*/
+html{
+	font-family:Helvetica,sans-serif,arial;
+}
 
+.flexbox, .secondflexbox{
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.section{
+	margin-bottom: 5%;
+}
+
+/*header style*/
 header{
+	height: 101px;
+	background-image: url(image/header_bk.gif);
+	background-repeat: no-repeat;
 	position: relative;
 	left: 0;
 	top: 0;
@@ -60,10 +89,13 @@ header{
 	top: 0;
 	left: 0;
 }
+
 #extend{
 	height: 0px;
 }
 
+
+/*navigatiion bar style*/
 ul {
     list-style-type: none;
     margin: 0;
@@ -71,7 +103,6 @@ ul {
     overflow: hidden;
     background-color: #333;
 }
-
 
 li {
     border: 1px solid white;
@@ -83,36 +114,244 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-         clear: both;
+    clear: both;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: #111;
-}
-.active {
-    background-color: #4CAF50;
+/*footer*/
+footer {
+  padding: 1em 0.5em .5em 0.5em;
+  font-size: 1em;
+  text-align: left;
 }
 
-@media screen and (min-width: 560px){
-	li {
-    float: left;
-    border: none;
+/*Table stylings*/
+#prices
+{
+  text-align: center;
+  color: black;
 }
+
+#prices table
+{
+  border-collapse: collapse;
+  margin: auto;
+}
+
+#prices th, td
+{
+  border: 1px black solid; 
+}
+
+#table_title
+{
+  font-size: 1.25em;
+  padding: 1em 5% .5em 5%;
+  text-align: center;
+}
+
+.header, .data2, .data
+{
+  width: 10em;
+  font-family: 'Oswald', sans-serif;
+  font:bolder;
+  font-size: 1em;
+  padding: 0.5em 5% .5em 5%;
+}
+
+#funds
+{
+  text-align: center;
+  color: black;
+}
+
+#funds table
+{
+  border-collapse: collapse;
+  margin: auto;
+}
+
+#funds th, td
+{
+  border: 1px black solid; 
+}
+
+#table_title2
+{
+  font-size: 1.25em;
+  padding: 1em 5% .5em 5%;
+  text-align: center;
+}
+
+/*footer*/
+footer {
+	margin-top: 0.5%;
+	
+	display: -webkit-box;
+	
+	display: -webkit-flex;
+	
+	display: -ms-flexbox;
+	
+	display: flex;
+	-webkit-box-pack: end;
+	-webkit-justify-content: flex-end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+}
+
+/*headings and paragraph*/
+
+h2{
+	font-size: 2em;
+	padding: 0.2em 0.2em 0.2em 0.2em;
+
+}
+
+p {
+  padding: 0.5em 0.5em .5em 0.5em;
+  font-size: 1em;
+  text-align: left;
+}
+
+
+#welcome {
+	margin-top: 5%;
+	width: 80%;
+	line-height: 1.5;
+}
+
+
+#scholarships
+{
+  font-size: 1em;
+  padding: 1em 5% .5em 5%;
+  text-align: left;
+  
+}
+
+
+/*layout*/
+#child-financial{
+	-webkit-align-self: center;
+	    -ms-flex-item-align: center;
+	        align-self: center;
+}
+
+
+#child-financial {
+	margin-top: 5%;
+	width: 80%;
+	line-height: 1.3;
+}
+
+
+@media screen and (min-width: 616px){
+
+#child-financial {
+margin-top: 30px;
+line-height: 1.5;
+}
+
+ul{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+}
+
+li {
+float: left;
+border: none;
+}
+
 }
 
 @media screen and (min-width: 804px){
 
+ul{
+	display:block;
+	padding-left: 5%;
+}
+
 header{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 }
-#myiit{
-	width: 804px;
-}
+
 #extend{
 	background: url('image/header_bk copy.gif');
 	width: 100%;
 	height: 101px;
+	margin-left: 800px;
 
 }
+
 }
+
+@media screen and (min-width: 960px){
+
+.flexbox{
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+}
+
+#child-financial{
+	width: 650px;
+}
+
+.secondflexbox{
+	width: 94%;
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+		flex-direction: row;
+-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+padding-left: 5%;
+
+}
+
+.secondflexbox {
+		-webkit-align-self: flex-start;
+			-ms-flex-item-align: start;
+				align-self: flex-start;
+}
+
+}
+
+
+@media screen and (min-width: 1200px){
+
+.flexbox{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+
+}
+
+
+
+
+
+
+
