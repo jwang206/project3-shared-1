@@ -5,131 +5,145 @@
 <head>
  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+<<<<<<< HEAD
     <link rel="stylesheet" type="text/css" href="Financial_screen.css">
+=======
+    <link rel="stylesheet" type="text/css" href="financial_screen.css">
+>>>>>>> 500f76f538acd85e049ed9dcb763b620bb027054
 	<title>Finance Page</title>
 
 </head>
 
 <body>
-	<header>
-	<img src="image/header_bk.gif" name="header_img" id="myiit">
-	<div id="extend"></div>
-	</header>
-<nav>
-	<ul>
-		<li><a href=""> Welcome </a></li>
-		<li><a href=""> Academics </a></li>
-		<li><a href=""> Student Life </a></li>
-		<li><a href=""> Finances </a></li>
-		<li><a href=""> Libray </a></li>
-		<li><a href=""> Research </a></li>
-	</ul>
-</nav>
+		<header>
+			<div id="extend"></div>
+		</header>
+		
+		<nav>
+			<ul>
+				<li><a href="welcome.html"> Welcome </a></li>
+				<li><a href="#"> Academics </a></li>
+				<li><a href="#"> Student Life </a></li>
+				<li><a href="#"> Finances </a></li>
+				<li><a href="#"> Libray </a></li>
+				<li><a href="#"> Research </a></li>
+			</ul>
+		</nav>
+		
+		<div class="flexbox" id="parent">
+         <div class="secondflexbox">
+            <div class="section" id="child-financial">
+    
+		<h2>Finances</h2>
+		<p>Welcome to the Redesigned Financial Aid Page!
+		This page will allow you easy access to the most
+		important financial aid information that you may 
+		want to see.  This page is divided into three sections:
+		Financial Aid Awards/Scholarships, 
+		Financial Aid Requirements,
+		and The Student Accounting Page 
+		where you'll have the chance to view and pay your bill</p>
 
+		<h2>Financial Aid Awards/Scholarships</h2>
+		<p>Click on the link below to go to accounting page where 
+		you will find your financial aid awards that will apply
+		to your tuition balance.</p>
+		
+		<form action="payment.html">
+			<input type="submit" value="Link to account page">
+		</form>
+        
+		<h2>IIT Print</h2>
+		<p>Funds to print on OTS Main Campus printers and SSB Downtown Campus 
+		lab printers as well.</p>
 
-<h1>Finances</h1>
-<p>Welcome to the Redesigned Financial Aid Page!
-This page will allow you easy access to the most
-important financial aid information that you may 
-want to see.  This page is divided into three sections:
-Financial Aid Awards/Scholarships, 
-Financial Aid Requirements,
-and The Student Accounting Page 
-where you'll have the chance to view and pay your bill</p>
+		<table id="funds">
+			<tr>
+				<th id="table_title" colspan="2">Funds</th>	
+			</tr>
+			<tr>
+				<td class="data">Free Credit</td>
+				<td class="data">$0.0</td>
+			</tr>
+			<tr>
+				<td class="data">Cash Deposit</td>
+				<td class="data">$0.0</td>
+			</tr>
+			<tr>
+				<td class="data">Electronic Deposit</td>
+				<td class="data">$0.0</td>	
+			</tr>
+		</table>
 
-<h2>Financial Aid Awards/Scholarships</h2>
-<p>Below you will find your financial aid awards
-including scholarships you have received.</p>
+		<select name="select">
+		  <option value="$5.00" selected>$5.00</option> 
+		  <option value="$10.00">$10.00</option>
+		  <option value="$25.00">$25.00</option>
+		  <option value="$50.00">$50.00</option>
+		  <option value="$100.00">$100.00</option>
+		</select>
 
-<select name="select">
-  <option value="value1" selected>2016-17</option> 
-  <option value="value2">2015-2016</option>
-  <option value="value3">2014-2015</option>
-  <option value="value3">2013-2014</option>
-  <option value="value3">2012-2013</option>
-  <option value="value3">2011-2012</option>
-  <option value="value3">2010-2011</option>
-</select>
+		<form action="https://secure.touchnet.net/C20418_tsa/web/login.jsp">
+			<input type="submit" value="Add">
+		</form>
 
-<button name="button">Submit</button>
+		<table id="prices">
+			<tr>
+				<th id="table_title2" colspan="3">Current Printing Price</th>	
+			</tr>	
+			<tr>
+				<th class="header">Print Type</th>
+				<th class="header">Price</th>
+				<th class="header">Duplex</th>
+			</tr>			
+			<tr>
+				<td class="data2">Black and White Letter (8.5 inches x 11 inches)</td>
+				<td class="data2">$.05 per sheet</td>
+				<td class="data2">$.04 per page</td>
+			</tr>
+			<tr>
+				<td class="data2">Black and White Tabloid (11 inches x 17 inches)</td>
+				<td class="data2">$.12 per sheet</td>
+				<td class="data2">$.10 per page</td>
+			</tr>
+			<tr>
+				<td class="data2">Color Letter (8.5 inches x 11 inches)</td>
+				<td class="data2">$.40 per sheet</td>
+				<td class="data2">No charge</td>
+			</tr>
+			<tr>
+				<td class="data2">Color Tabloid (11 inches x 17 inches)</td>
+				<td class="data2">$.80 per sheet</td>
+				<td class="data2">No charge</td>
+			</tr>
+			<tr>
+				<td class="data2">Color Plot</td>
+				<td class="data2">$5.00 per linear foot ($0.42 per inch)</td>
+				<td class="data2">No charge</td>
+			</tr>
+			<tr>
+				<td class="data2">Black and White Plot</td>
+				<td class="data2">$1.25 per linear foot</td>
+				<td class="data2">No charge</td>
+			</tr>
+		</table>
+			
+		 </div>	
+		 </div>
+         </div>
 
+		 <footer>
+				<ul>	
+					<li><a href="http://web.iit.edu/financial-aid">Office of Financial Aid</a></li>
+					<li><a href="https://web.iit.edu/student-accounting/">Student Accounting Office Website</a></li>
+					<li><a href="https://my101.iit.edu/title4authform/web/Title4AuthForm">Title IV Authorization Form</a></li>
+					<li><a href="https://secure.touchnet.com/C20090_tsa/web/login.jsp">Authorized User Login Page</a></li>
+					<li><a href="https://www.ecsi.net/prom7G/">View and sign your Perkins or Institutional Loan Master Promissory Note</a></li>
+					<li><a href="https://www.flywire.com/school/iit">International payments and wire transfers</a></li>
+					<li><a href="https://web.iit.edu/student-accounting/faqs/tax-information">Access, download and print your 2012 1098-T Form</a></li>
+				</ul>	
+		</footer>	
+			      
+	</body>
 
-<h2>Financial Aid Requirements</h2>
-<p>The following are the financial aid requirements 
-that you currently need to fulfill to be eligible for aid.</p>
-
-<h2>IIT Print</h2>
-<p>Funds to print on OTS Main Campus printers and SSB Downtown Campus 
-lab printers as well.</p>
-
-<div id="Current Funds">
-	<table>
-		<tr>
-			<td>Free Credit</td>
-			<td>$0.0</td>
-		</tr>
-		<tr>
-			<td>Cash Deposit</td>
-			<td>$0.0</td>
-		</tr>
-		<tr>
-			<td>Electronic Deposit</td>
-			<td>$0.0</td>	
-		</tr>
-	</table>
-</div>
-
-
-<div id="Current Printing Prices">
- 	<p>Current Printing Prices</p>
- 	<table>
- 		<tr>
- 			<th>Print Type</th>
- 			<th>Price</th>
- 			<th>Duplex</th>
- 		</tr>	
-		<tr>
-			<td>Black and White Letter (8.5 inches x 11 inches)</td>
-			<td>$.05 per sheet</td>
-			<td>$.04 per page</td>
-		</tr>
-		<tr>
-			<td>Black and White Tabloid (11 inches x 17 inches)</td>
-			<td>$.12 per sheet</td>
-			<td>$.10 per page</td>
-		</tr>
-		<tr>
-			<td>Color Letter (8.5 inches x 11 inches)</td>
-			<td>$.40 per sheet</td>
-		</tr>
-		<tr>
-			<td>Color Tabloid (11 inches x 17 inches)</td>
-			<td>$.80 per sheet</td>
-		</tr>
-		<tr>
-			<td>Color Plot</td>
-			<td>$5.00 per linear foot ($0.42 per inch)</td>
-		</tr>
-		<tr>
-			<td>Black and White Plot</td>
-			<td>$1.25 per linear foot</td>
-		</tr>
-	</table>
-</div>
-
-
-<footer>
-	<div id="contact info">
-	   <h2>Office of Financial Aid</h2>
-	   <p>Perlstein Hall, 206</p>
-	   <p>10 W 33rd Street</p>
-	   <p>Chicago, IL 60616<p>
-       <p>Toll Free 866.901.1866 | Tel: 312.567.7219 | Fax: 312.567.3982</p>
-       <a href="finaid@iit.edu">finaid@iit.edu</a>
-       <p>Hours (M-F): 8:30 a.m. - 5 p.m.</p>
-       <p>Counseling Hours (M-F): Noon - 3 p.m.</p>
-    </div>
-</footer>
-
-</body>
 </html>
