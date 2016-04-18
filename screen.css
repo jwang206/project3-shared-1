@@ -339,11 +339,10 @@ h3{
 .finance #intro{
 margin: 5% auto;
 }
-.finance .section,.finance #links h3 {
+.finance .section {
   width: 80%;
 }
-#links h3{
-margin: 0 auto;}
+
 
 .finance #student_accout, .finance #print, .finance #price{
   height: 100%;
@@ -358,17 +357,22 @@ margin: 0 auto;}
   height: 100%;
 }
 
-.finance #links ul{
- display: flex;
- flex-direction: column;
+.finance #links ul {
+ display:block;
  background: none;
 }
-
+ 
  #links ul li a{
   color: black;
    text-align: left;
+   background:none;
+   text-decoration: underline;
  }
 
+.finance #links h3{
+  width: 80%;
+  margin: 0 auto;
+}
 .finance .flexbox{
   
   margin-top: 50px;
@@ -378,7 +382,10 @@ margin: 0 auto;}
   justify-content: center;
 }
 
-
+.finance form input{
+  margin-top: 15px;
+}
+}
 
 
 
@@ -682,15 +689,25 @@ header{
   }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .section:nth-of-type(2) { order: 1; }
+  
+  .finance .flexbox{
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
 
   .finance #price{
     width: 45%;
   }
 
    .finance #links{
-    width: 35%;
+    width: 60%;
+    height: 100%;
   }
 
+  .finance #links ul{
+    padding: 0;
+  }
 }
 
 @media screen and (min-width: 960px){
