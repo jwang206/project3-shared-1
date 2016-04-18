@@ -1,11 +1,15 @@
 <!DOCTYPE html> 
 
-<html lang="en">
+<html lang="en" class="finance">
 
 <head>
  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="financial_screen.css">
+
+    <link rel="stylesheet" type="text/css" href="Financial_screen.css">
+
+    <link rel="stylesheet" type="text/css" href="screen.css">
+
 	<title>Finance Page</title>
 
 </head>
@@ -20,16 +24,14 @@
 				<li><a href="welcome.html"> Welcome </a></li>
 				<li><a href="#"> Academics </a></li>
 				<li><a href="#"> Student Life </a></li>
-				<li><a href="#"> Finances </a></li>
+				<li><a href="Financial.html"> Finances </a></li>
 				<li><a href="#"> Libray </a></li>
 				<li><a href="#"> Research </a></li>
 			</ul>
 		</nav>
 		
-		<div class="flexbox" id="parent">
-         <div class="secondflexbox">
-            <div class="section" id="child-financial">
-    
+		
+    	<div id="intro">
 		<h2>Finances</h2>
 		<p>Welcome to the Redesigned Financial Aid Page!
 		This page will allow you easy access to the most
@@ -39,16 +41,19 @@
 		Financial Aid Requirements,
 		and The Student Accounting Page 
 		where you'll have the chance to view and pay your bill</p>
-
+		</div>
+<div class="flexbox" id="parent">
+		<div class="section" id="student_accout"> 
 		<h2>Financial Aid Awards/Scholarships</h2>
 		<p>Click on the link below to go to accounting page where 
 		you will find your financial aid awards that will apply
 		to your tuition balance.</p>
-		
 		<form action="payment.html">
-			<input type="submit" value="Link to account page">
+			<input type="submit" value="Pay Tuition">
 		</form>
-        
+        </div>
+
+        <div class="section" id="print">
 		<h2>IIT Print</h2>
 		<p>Funds to print on OTS Main Campus printers and SSB Downtown Campus 
 		lab printers as well.</p>
@@ -82,7 +87,9 @@
 		<form action="https://secure.touchnet.net/C20418_tsa/web/login.jsp">
 			<input type="submit" value="Add">
 		</form>
+		</div>
 
+		<div class="section" id="price">
 		<table id="prices">
 			<tr>
 				<th id="table_title2" colspan="3">Current Printing Price</th>	
@@ -123,12 +130,10 @@
 				<td class="data2">No charge</td>
 			</tr>
 		</table>
-			
-		 </div>	
-		 </div>
-         </div>
+			</div>
 
-		 <footer>
+			<div class="section" id="links">
+			<h3>Related links</h3>
 				<ul>	
 					<li><a href="http://web.iit.edu/financial-aid">Office of Financial Aid</a></li>
 					<li><a href="https://web.iit.edu/student-accounting/">Student Accounting Office Website</a></li>
@@ -138,6 +143,14 @@
 					<li><a href="https://www.flywire.com/school/iit">International payments and wire transfers</a></li>
 					<li><a href="https://web.iit.edu/student-accounting/faqs/tax-information">Access, download and print your 2012 1098-T Form</a></li>
 				</ul>	
+			</div>
+
+		 </div>	
+		
+
+		 <footer>
+				<a id="top" onmouseover="window.status=''; return true;" href="#TOP"><B>Top</B></a>
+         <a id="iit" href="http://www.iit.edu"><img title="Illinois Institute of Technology" src="image/foot_logo.gif" alt="Illinois Institute of Technology"></a>
 		</footer>	
 			      
 	</body>

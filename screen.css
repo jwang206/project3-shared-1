@@ -238,8 +238,7 @@ li {
     border: 1px solid white;
 }
 
-li a {
-
+nav li a {
     display: block;
     color: white;
     text-align: center;
@@ -248,10 +247,10 @@ li a {
          clear: both;
 }
 /* Change the link color to #111 (black) when hover */
-li a:hover {
+nav li a:hover {
     background-color: #111;
 }
-.active {
+nav .active {
     background-color: #4CAF50;
 }
 
@@ -267,7 +266,7 @@ h3{
   font-size: 150%;
 }
 
-#child-welcome {
+#child-welcome, .finance #intro {
   margin-top: 5%;
   width: 80%;
   line-height: 1.3;
@@ -332,6 +331,71 @@ h3{
   border: none;
   border-radius: 3px;
 }
+/***************************************************************************/
+                               /*finance page*/
+.finance h2{
+  font-size: 150%;
+}
+.finance #intro{
+margin: 5% auto;
+}
+.finance .section {
+  width: 80%;
+}
+
+
+.finance #student_accout, .finance #print, .finance #price{
+  height: 100%;
+}
+.finance #student_accout p, .finance #print p{
+  line-height: 1.3;
+  margin-top: 10px;
+}
+
+.finance #links{
+  width: 100%;
+  height: 100%;
+}
+
+.finance #links ul {
+ display:block;
+ background: none;
+}
+ 
+ #links ul li a{
+  color: black;
+   text-align: left;
+   background:none;
+   text-decoration: underline;
+ }
+
+.finance #links h3{
+  width: 80%;
+  margin: 0 auto;
+}
+.finance .flexbox{
+  
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.finance form input{
+  margin-top: 15px;
+}
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /***************************************************************************/
@@ -485,7 +549,7 @@ h3{
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /*payment*/
-@media screen and (min-width: 560px){
+@media screen and (min-width: 600px){
   li {
         float: left;
         border: none;
@@ -501,9 +565,30 @@ h3{
   width: 50%;
   }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*>>>>>>>>>>>>>>>>>>>>>>>>>*/
+  .finance .section{
+  width: 30%;
+}
+
+.finance #price{
+  width: 100%;
+}
+
+.finance #prices{
+margin: 0 auto;}
+
+.finance .flexbox{
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 @media screen and (min-width: 616px){
-  #child-welcome {
+  #child-welcome,.finance #intro {
   margin-top: 30px;
   line-height: 1.5;
   }
@@ -603,6 +688,26 @@ header{
     width:100%;
   }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.section:nth-of-type(2) { order: 1; }
+  
+  .finance .flexbox{
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+
+  .finance #price{
+    width: 45%;
+  }
+
+   .finance #links{
+    width: 60%;
+    height: 100%;
+  }
+
+  .finance #links ul{
+    padding: 0;
+  }
 }
 
 @media screen and (min-width: 960px){
@@ -643,15 +748,20 @@ header{
 
 
 @media screen and (min-width: 1200px){
+  .finance #intro{
+  width: 80%;
+}
   .flexbox{
     width: 1200px;
     margin: 0 auto;
   }
 
-
 }
 
 
-
-
+@media screen and (min-width: 1400px){
+.finance .flexbox{
+    width: 1400px;
+  }
+}
 
