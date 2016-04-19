@@ -1,158 +1,181 @@
-<!DOCTYPE html> 
-
-<html lang="en" class="finance">
+<!DOCTYPE html>
+<html class="finance" lang="en">
 
 <head>
- 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
-
-    <link rel="stylesheet" type="text/css" href="Financial_screen.css">
-
-    <link rel="stylesheet" type="text/css" href="screen.css">
-
-	<title>Finance Page</title>
-
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0" name="viewport">
+    <link href="Financial_screen.css" rel="stylesheet" type="text/css">
+    <link href="screen.css" rel="stylesheet" type="text/css">
+    <title>Finance Page</title>
 </head>
 
 <body>
-		<header>
-			<div id="extend"></div>
-		</header>
-		
-		<nav>
-			<ul>
-				<li><a href="welcome.html"> Welcome </a></li>
-				<li><a href="#"> Academics </a></li>
-				<li><a href="#"> Student Life </a></li>
-				<li><a href="Financial.html"> Finances </a></li>
-				<li><a href="#"> Libray </a></li>
-				<li><a href="#"> Research </a></li>
-			</ul>
-		</nav>
-		
-		
-    	<div id="intro">
-		<h2>Finances</h2>
-		<p>Welcome to the Redesigned Financial Aid Page!
-		This page will allow you easy access to the most
-		important financial aid information that you may 
-		want to see.  This page is divided into three sections:
-		Financial Aid Awards/Scholarships, 
-		Financial Aid Requirements,
-		and The Student Accounting Page 
-		where you'll have the chance to view and pay your bill</p>
-		</div>
-<div class="flexbox" id="parent">
-		<div class="section" id="student_accout"> 
-		<h2>Financial Aid Awards/Scholarships</h2>
-		<p>Click on the link below to go to accounting page where 
-		you will find your financial aid awards that will apply
-		to your tuition balance.</p>
-		<form action="payment.html">
-			<input type="submit" value="Pay Tuition">
-		</form>
+    <header>
+        <div id="extend"></div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="welcome.html">Welcome</a>
+            </li>
+            <li>
+                <a href="#">Academics</a>
+            </li>
+            <li>
+                <a href="#">Student Life</a>
+            </li>
+            <li>
+                <a href="Financial.html">Finances</a>
+            </li>
+            <li>
+                <a href="#">Libray</a>
+            </li>
+            <li>
+                <a href="#">Research</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="intro">
+        <h2>Finances</h2>
+        <p>Welcome to the Redesigned Financial Aid Page! This page will allow you easy access to the most important financial aid information that you may want to see. This page is divided into three sections: Financial Aid Awards/Scholarships, Financial Aid Requirements, and The Student Accounting Page where you'll have the chance to view and pay your bill</p>
+    </div>
+    <div class="flexbox" id="parent">
+        <div class="section" id="student_accout">
+            <h2>Financial Aid Awards/Scholarships</h2>
+            <p>Click on the link below to go to accounting page where you will find your financial aid awards that will apply to your tuition balance.
+            </p>
+            <form action="payment.html">
+                <input type="submit" value="Pay Tuition">
+            </form>
         </div>
-
         <div class="section" id="print">
-		<h2>IIT Print</h2>
-		<p>Funds to print on OTS Main Campus printers and SSB Downtown Campus 
-		lab printers as well.</p>
-
-		<table id="funds">
-			<tr>
-				<th id="table_title" colspan="2">Funds</th>	
-			</tr>
-			<tr>
-				<td class="data">Free Credit</td>
-				<td class="data">$0.0</td>
-			</tr>
-			<tr>
-				<td class="data">Cash Deposit</td>
-				<td class="data">$0.0</td>
-			</tr>
-			<tr>
-				<td class="data">Electronic Deposit</td>
-				<td class="data">$0.0</td>	
-			</tr>
-		</table>
-
-		<select name="select">
-		  <option value="$5.00" selected>$5.00</option> 
-		  <option value="$10.00">$10.00</option>
-		  <option value="$25.00">$25.00</option>
-		  <option value="$50.00">$50.00</option>
-		  <option value="$100.00">$100.00</option>
-		</select>
-
-		<form action="https://secure.touchnet.net/C20418_tsa/web/login.jsp">
-			<input type="submit" value="Add">
-		</form>
-		</div>
-
-		<div class="section" id="price">
-		<table id="prices">
-			<tr>
-				<th id="table_title2" colspan="3">Current Printing Price</th>	
-			</tr>	
-			<tr>
-				<th class="header">Print Type</th>
-				<th class="header">Price</th>
-				<th class="header">Duplex</th>
-			</tr>			
-			<tr>
-				<td class="data2">Black and White Letter (8.5 inches x 11 inches)</td>
-				<td class="data2">$.05 per sheet</td>
-				<td class="data2">$.04 per page</td>
-			</tr>
-			<tr>
-				<td class="data2">Black and White Tabloid (11 inches x 17 inches)</td>
-				<td class="data2">$.12 per sheet</td>
-				<td class="data2">$.10 per page</td>
-			</tr>
-			<tr>
-				<td class="data2">Color Letter (8.5 inches x 11 inches)</td>
-				<td class="data2">$.40 per sheet</td>
-				<td class="data2">No charge</td>
-			</tr>
-			<tr>
-				<td class="data2">Color Tabloid (11 inches x 17 inches)</td>
-				<td class="data2">$.80 per sheet</td>
-				<td class="data2">No charge</td>
-			</tr>
-			<tr>
-				<td class="data2">Color Plot</td>
-				<td class="data2">$5.00 per linear foot ($0.42 per inch)</td>
-				<td class="data2">No charge</td>
-			</tr>
-			<tr>
-				<td class="data2">Black and White Plot</td>
-				<td class="data2">$1.25 per linear foot</td>
-				<td class="data2">No charge</td>
-			</tr>
-		</table>
-			</div>
-
-			<div class="section" id="links">
-			<h3>Related links</h3>
-				<ul>	
-					<li><a href="http://web.iit.edu/financial-aid">Office of Financial Aid</a></li>
-					<li><a href="https://web.iit.edu/student-accounting/">Student Accounting Office Website</a></li>
-					<li><a href="https://my101.iit.edu/title4authform/web/Title4AuthForm">Title IV Authorization Form</a></li>
-					<li><a href="https://secure.touchnet.com/C20090_tsa/web/login.jsp">Authorized User Login Page</a></li>
-					<li><a href="https://www.ecsi.net/prom7G/">View and sign your Perkins or Institutional Loan Master Promissory Note</a></li>
-					<li><a href="https://www.flywire.com/school/iit">International payments and wire transfers</a></li>
-					<li><a href="https://web.iit.edu/student-accounting/faqs/tax-information">Access, download and print your 2012 1098-T Form</a></li>
-				</ul>	
-			</div>
-
-		 </div>	
-		
-
-		 <footer>
-				<a id="top" onmouseover="window.status=''; return true;" href="#TOP"><B>Top</B></a>
-         <a id="iit" href="http://www.iit.edu"><img title="Illinois Institute of Technology" src="image/foot_logo.gif" alt="Illinois Institute of Technology"></a>
-		</footer>	
-			      
-	</body>
+            <h2>IIT Print</h2>
+            <p>Funds to print on OTS Main Campus printers and SSB Downtown Campus lab printers as well.</p>
+            <table id="funds">
+                <tr>
+                    <th colspan="2" id="table_title">Funds</th>
+                </tr>
+                <tr>
+                    <td class="data">Free Credit</td>
+                    <td class="data">$0.0</td>
+                </tr>
+                <tr>
+                    <td class="data">Cash Deposit</td>
+                    <td class="data">$0.0</td>
+                </tr>
+                <tr>
+                    <td class="data">Electronic Deposit</td>
+                    <td class="data">$0.0</td>
+                </tr>
+            </table>
+            <select name="select">
+                <option selected value="$5.00">
+                    $5.00
+                </option>
+                <option value="$10.00">
+                    $10.00
+                </option>
+                <option value="$25.00">
+                    $25.00
+                </option>
+                <option value="$50.00">
+                    $50.00
+                </option>
+                <option value="$100.00">
+                    $100.00
+                </option>
+            </select>
+            <form action="https://secure.touchnet.net/C20418_tsa/web/login.jsp">
+                <input type="submit" value="Add">
+            </form>
+        </div>
+        <div class="section" id="price">
+            <table id="prices">
+                <tr>
+                    <th colspan="3" id="table_title2">Current Printing Price
+                    </th>
+                </tr>
+                <tr>
+                    <th class="header">Print Type</th>
+                    <th class="header">Price</th>
+                    <th class="header">Duplex</th>
+                </tr>
+                <tr>
+                    <td class="data2">Black and White Letter (8.5 inches x 11 inches)
+                    </td>
+                    <td class="data2">$.05 per sheet</td>
+                    <td class="data2">$.04 per page</td>
+                </tr>
+                <tr>
+                    <td class="data2">Black and White Tabloid (11 inches x 17 inches)
+                    </td>
+                    <td class="data2">$.12 per sheet</td>
+                    <td class="data2">$.10 per page</td>
+                </tr>
+                <tr>
+                    <td class="data2">Color Letter (8.5 inches x 11 inches)
+                    </td>
+                    <td class="data2">$.40 per sheet</td>
+                    <td class="data2">No charge</td>
+                </tr>
+                <tr>
+                    <td class="data2">Color Tabloid (11 inches x 17 inches)
+                    </td>
+                    <td class="data2">$.80 per sheet</td>
+                    <td class="data2">No charge</td>
+                </tr>
+                <tr>
+                    <td class="data2">Color Plot</td>
+                    <td class="data2">$5.00 per linear foot ($0.42 per inch)
+                    </td>
+                    <td class="data2">No charge</td>
+                </tr>
+                <tr>
+                    <td class="data2">Black and White Plot</td>
+                    <td class="data2">$1.25 per linear foot</td>
+                    <td class="data2">No charge</td>
+                </tr>
+            </table>
+        </div>
+        <div class="section" id="links">
+            <h3>Related links</h3>
+            <ul>
+                <li>
+                    <a href="http://web.iit.edu/financial-aid">Office of
+                    Financial Aid</a>
+                </li>
+                <li>
+                    <a href="https://web.iit.edu/student-accounting/">Student
+                    Accounting Office Website</a>
+                </li>
+                <li>
+                    <a href="https://my101.iit.edu/title4authform/web/Title4AuthForm">Title
+                    IV Authorization Form</a>
+                </li>
+                <li>
+                    <a href="https://secure.touchnet.com/C20090_tsa/web/login.jsp">Authorized
+                    User Login Page</a>
+                </li>
+                <li>
+                    <a href="https://www.ecsi.net/prom7G/">View and sign your
+                    Perkins or Institutional Loan Master Promissory Note</a>
+                </li>
+                <li>
+                    <a href="https://www.flywire.com/school/iit">International
+                    payments and wire transfers</a>
+                </li>
+                <li>
+                    <a href="https://web.iit.edu/student-accounting/faqs/tax-information">
+                    Access, download and print your 2012 1098-T Form</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <a href="#TOP" id="top" onmouseover="window.status=''; return true;"><b>Top</b></a>
+        <a href="http://www.iit.edu" id="iit"><img alt="Illinois Institute of Technology" src="image/foot_logo.gif" title="Illinois Institute of Technology">
+        </a>
+    </footer>
+</body>
 
 </html>
