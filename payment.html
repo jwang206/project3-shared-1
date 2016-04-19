@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html class="payment">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="screen.css">
+      <script src="js/myscript.js"></script>
+      <script src="js/shoestring.js"></script>
+    <title>Payment</title>
+  </head>
+
+  <body>
+  <header>
+         <div id="extend"></div>
+      </header>
+      <nav>
+         <ul>
+            <li><a href="welcome.html"> Welcome </a></li>
+            <li><a href="#"> Academics </a></li>
+            <li><a href="#"> Student Life </a></li>
+            <li><a href="Financial.html"> Finances </a></li>
+            <li><a href="#"> Libray </a></li>
+            <li><a href="#"> Research </a></li>
+         </ul>
+      </nav>
+    <div id="content-wrapper">
+      
+
+      <h3>Account Payment</h3>
+
+      <div id="account-statement">
+
+      <input type=button name=type id='mouseRegion' value='Show Account Details' onclick="setVisibility('account-details');"> 
+
+      <p>Amount Due: $7,500</p>
+      <p>Tuition & Fees Due in Full: Sept 6, 2016</p>
+
+      <div id="account-details">
+
+        <table id="center">
+          <tr>
+            <td id="table_title" colspan="2">Account Statement -- 2016 Fall</td>  
+          </tr> 
+            <tr>
+              <th class="table-text">Account Type</th>
+              <th class="table-text">Dollar ($)</th>
+            </tr> 
+
+            <tr id="tuition">
+              <th class="table-text">Tuition</th>
+              <td class="debt">$43,500</td>
+            </tr>
+
+            <tr id="scholarships">
+              <th class="table-text">Scholarships</th>
+              <td class="credit">$21,000</td>
+            </tr>
+
+            <tr id="grants">
+              <th class="table-text">Grants</th>
+              <td class="credit">$11,000</td>
+            </tr>
+
+            <tr id="loans">
+              <th class="table-text">Student Loans</th>
+              <td class="credit">$5,000</td>
+            </tr>
+
+            <tr id="debts">
+              <th class="table-text">Previous Debts</th>
+              <td class="debt">$1,000</td>
+            </tr>
+
+            <tr id="paid">
+              <th class="table-text">Already Paid</th>
+              <td class="credit">$0</td>
+            </tr>
+
+            <tr id="balance">
+              <th class="table_head">Balance</th>
+              <td class="debt">$7,500</td>
+            </tr>
+        </table>
+      </div>
+
+      </div>
+
+      <div id="account-payment">
+        
+      <form id="payment-form" name="paymentForm" action="#" method="post" onsubmit="return(validate());" >
+         <fieldset>
+         <div id="cardimg">
+           <img src="image/ccimg_1.gif">
+          <img src="image/ccimg_2.gif">
+          <img src="image/ccimg_16.gif">
+          <img src="image/ccimg_4.gif">
+          <img src="image/ccimg_8.gif">
+         </div>
+            <legend>Payment</legend>
+            <label for="CardType">Type</label>
+            <select name="CardType" id="CardType">
+               <option value="1" selected>Visa</option>
+               <option value="2">MasterCard</option>
+               <option value="4">American Express</option>
+               <option value="8">Discover</option>
+               <option value="16">Diners Club</option>
+            </select>
+            <label for="CardName">Name on Card</label>
+            <input name="CardName" type="text" id="CardName" />
+            
+            <label for="CardNumber">Card Number</label>
+            <input name="CardNumber" type="text" maxlength="16" id="CardNumber" />
+            
+            <p>Expiration Date</p>
+          <div id="expflex">
+            <div id="month">
+            <label for="ExpireMonth">Month</label>
+            <select name="ExpireMonth" id="ExpireMonth">
+               <option value="1" selected>01</option>
+               <option value="2"> 02</option>
+               <option value="3"> 03</option>
+               <option value="4"> 04</option>
+               <option value="5"> 05</option>
+               <option value="6"> 06</option>
+               <option value="7"> 07</option>
+               <option value="8"> 08</option>
+               <option value="9"> 09</option>
+               <option value="10"> 10</option>
+               <option value="11"> 11</option>
+               <option value="12"> 12</option>
+            </select>
+            </div>
+
+            <div id="year">
+            <label for="ExpireYear">Year</label>
+            <select name="ExpireYear" id="ExpireYear">
+               <option value="2016" selected>2016</option>
+               <option value="2017">2017</option>
+               <option value="2018">2018</option>
+               <option value="2019">2019</option>
+               <option value="2020">2020</option>
+               <option value="2021">2021</option>
+               <option value="2022">2022</option>
+               <option value="2023">2023</option>
+               <option value="2024">2024</option>
+               <option value="2025">2025</option>
+               <option value="2026">2026</option>
+               <option value="2027">2027</option>
+               <option value="2028">2028</option>
+               <option value="2029">2029</option>
+               <option value="2030">2030</option>
+               <option value="2031">2031</option>
+               <option value="2032">2032</option>
+               <option value="2033">2033</option>
+               <option value="2034">2034</option>
+               <option value="2035">2035</option>
+               <option value="2036">2036</option>
+            </select>
+            </div>
+          </div>
+            <div id="cvvinline">
+            <label for="CVVNumber">CVV</label>
+            <input name="CVVNumber" type="text" maxlength="3" id="CVVNumber" />
+
+            </div>
+            <input type="submit" name="submit" id="send" value="Submit Payment"/>
+         </fieldset>
+      </form>   
+
+   
+
+    
+    <footer>
+         <a id="top" onmouseover="window.status=''; return true;" href="#TOP"><B>Top</B></a>
+         <a id="iit" href="http://www.iit.edu"><img title="Illinois Institute of Technology" src="image/foot_logo.gif" alt="Illinois Institute of Technology"></a>
+      </footer>
+  </body>
+
+</html>

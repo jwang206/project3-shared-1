@@ -1,0 +1,849 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/**************************************************************************
+(reset)*/
+
+                                /* login page */
+
+body {
+background-color: #f0f0f0;
+background-repeat: no-repeat;
+background-position:center center; 
+}
+
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+}
+
+
+#iit_logo{
+display: block;
+  margin: 0 auto;
+  width: 350px;
+  margin-bottom: 50px;
+  margin-top: 10%;
+}
+
+
+.container {
+  display: block;
+  width: 90%;
+  border: white solid 0.5px;
+ background-color: lightgrey;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 8px;
+}
+
+
+.loginbox {
+  padding: 20px 0;
+}
+.loginbox input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: white;
+  width: 55%;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin: 0 auto 15px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: black;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+  font-weight: 300;
+}
+
+.loginbox input:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.loginbox button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  background-color: white;
+  border: 0;
+  padding: 10px 15px;
+  margin: 0 auto 15px auto;
+  color: red;
+  border-radius: 5px;
+  width: 37%;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  margin-top: 5%;
+}
+
+.loginbox button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.loginbox a{
+  text-decoration: none;
+}
+
+/***************************************************************************/
+                              /*welcome page*/
+
+/*page-wide settings*/
+html{
+  font-family:Helvetica,sans-serif,arial;
+}
+
+.flexbox, .secondflexbox{
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+
+.section{
+  margin-bottom: 5%;
+}
+
+
+header{
+  height: 101px;
+  background-image: url(image/header_bk.gif);
+  background-repeat: no-repeat;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+#myiit{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#extend{
+  height: 0px;
+}
+
+ol{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+footer{
+  margin-top: 5%;
+  padding-right: 5%;
+  padding-top: 20px;
+  border-top: solid 2px;
+  
+  display: -webkit-box;
+  
+  display: -webkit-flex;
+  
+  display: -ms-flexbox;
+  
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+footer #top{
+  margin-right: 3em;
+}
+
+footer #iit{
+  border: none;
+}
+/*navigatiion bar style*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    border: 1px solid white;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+         clear: both;
+}
+/* Change the link color to #111 (black) when hover */
+nav li a:hover {
+    background-color: #111;
+}
+nav .active {
+    background-color: #4CAF50;
+}
+
+/*layout*/
+#child-welcome, #child-phone_book{
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+}
+
+/*first section style*/
+h3{
+  font-size: 150%;
+}
+
+#child-welcome, .finance #intro {
+  margin-top: 5%;
+  width: 80%;
+  line-height: 1.3;
+}
+
+
+
+
+
+
+/*third section - Calender*/
+#child-calender iframe{
+  margin-left: 5%;
+  width: 90%;
+  height: 300px;
+  border: none;
+}
+
+
+/*last section - phonebook style*/
+#child-phone_book #title{
+  font-weight: bolder;
+  line-height: 2;
+}
+
+#child-phone_book #name{
+  margin-top: 20px;
+}
+#child-phone_book form #name input{ 
+  width: 80%;
+  border-radius:3px;
+  border: none;
+  border:solid black 1.5px;
+  padding:2%;
+  font-size: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+.block{
+  display: block;
+  margin-top: 5px;
+}
+
+#child-phone_book form{
+  margin: 0 auto;
+  padding-left: 30px;
+  border: 0.5px solid;
+  padding-top: 25px;
+  width: 200px;
+  height: 250px;
+  background:lightgray;
+}
+#submit_button{
+  margin-top: 20px;
+  width:40%;
+}
+
+#submit_button:hover{
+  background:lightblue;
+  border: none;
+  border-radius: 3px;
+}
+/***************************************************************************/
+                               /*finance page*/
+.finance h2{
+  font-size: 150%;
+}
+.finance #intro{
+margin: 5% auto;
+}
+.finance .section {
+  width: 80%;
+}
+
+
+.finance #student_accout, .finance #print, .finance #price{
+  height: 100%;
+}
+.finance #student_accout p, .finance #print p{
+  line-height: 1.3;
+  margin-top: 10px;
+}
+
+.finance #links{
+  width: 100%;
+  height: 100%;
+}
+
+.finance #links ul {
+ display:block;
+ background: none;
+}
+ 
+ #links ul li a{
+  color: black;
+   text-align: left;
+   background:none;
+   text-decoration: underline;
+ }
+
+.finance #links h3{
+  width: 80%;
+  margin: 0 auto;
+}
+.finance .flexbox{
+  
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.finance form input{
+  margin-top: 15px;
+}
+
+/***************************************************************************/
+                               /*Payment page*/
+
+
+.payment #content-wrapper {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  color: #222; 
+  border-radius: 0.83333em;
+  -moz-border-radius: 0.83333em;
+}
+
+
+.payment fieldset{
+  box-shadow: 0px 0px 10px 3px gray;
+  padding: 3em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 3;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+}
+
+.payment #cvvinline{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#CVVNumber{
+  width: 3em;
+  margin-left: 1em;
+}
+#send{
+  margin-top: 2em;
+}
+
+#expflex{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+#year{
+  margin-left: 1em;
+}
+.payment form input{
+    background-color: #fafafa;
+    vertical-align: top;
+    display: inline-block;
+    font-size: 90%;
+    border: 0;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    padding: 0.3em;
+    -webkit-appearance: none;
+}
+
+
+
+.payment fieldset input[type="submit"]:hover {
+    background-color: #3399ff;
+    color: #fafafa;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+.payment fieldset input[type="submit"].btn {
+    font-size: 100%;
+    color: #fafafa;
+    width: 6em;
+
+  
+    height: 4em;
+ 
+    
+    -webkit-appearance: none;
+}
+
+#cardimg{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+#payment-form img {
+  box-shadow: 0.3em 0.3em 0.4em gray;
+  padding-top: 0.34em;
+}
+
+#content-wrapper h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.528em;
+  font-weight: bold;
+  padding: 0.5em 5% .5em 5%;
+  text-align: center;
+}
+
+#mouseRegion {
+  margin-bottom: 2em;
+    background-color: #ccc;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.5em 0 .5em 0.5em;
+}
+
+#account-details
+{
+  opacity:0.7;
+  color: black;
+  text-align: center;
+  display: none;
+}
+
+#account-details table
+{
+  border-collapse: collapse;
+  margin: auto;
+  width:100%;
+}
+
+#account-details th, td
+{
+  border: 1px black solid; 
+}
+
+#account-table {
+  text-align: center;
+}
+
+#table_title
+{
+  font-size: 1.25em;
+  padding: 0.5em 5% .5em 5%;
+}
+
+.table-text, .credit, .debt
+{
+  width: 10em;
+  font-family: 'Oswald', sans-serif;
+  font:bolder;
+  font-size: 1em;
+  padding: 0.5em 5% .5em 5%;
+}
+
+.debt
+{
+  color:red;
+}
+
+
+
+#payment-form legend {
+  border: none;
+  font-family: times-serif;
+  font-size: 1.528em;
+  font-weight: bold;
+}
+
+
+
+
+/***************************************************************************/
+                               /*Media Query*/
+@media screen and (min-width: 350px){
+.container {
+  width: 350px;
+ margin: 0 auto;
+}
+
+#iit_logo{
+  margin-top: 150px;
+}
+
+.payment fieldset{
+  width: 350px;
+  margin: 0 auto;
+}
+
+}
+
+@media screen and (min-width: 443px){
+ #account-statement{
+ padding-left: 2em;
+  padding-right: 2em;
+}
+}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*payment*/
+@media screen and (min-width: 600px){
+  li {
+        float: left;
+        border: none;
+    }
+
+     #mouseRegion {
+    width: 15.625em;
+    font-family: times-serif;
+    font-size: 1.228em;
+  }
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*>>>>>>>>>>>>>>>>>>>>>>>>>*/
+  .finance .section{
+  width: 30%;
+}
+
+.finance #price{
+  width: 100%;
+}
+
+.finance #prices{
+margin: 0 auto;}
+
+.finance .flexbox{
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+              -ms-grid-row-align: flex-start;
+          align-items: flex-start;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+@media screen and (min-width: 616px){
+  #child-welcome,.finance #intro {
+  margin-top: 30px;
+  line-height: 1.5;
+  }
+  ul{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  li {
+    float: left;
+    border: none;
+}
+  
+  #child-calender iframe{
+    height:500px;
+  }
+
+}
+
+
+@media screen and (min-width: 804px){
+ul{
+  display:block;
+  padding-left: 5%;
+}
+ #child-phone_book {
+  margin-top: 5%;
+ }
+
+
+section #name{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#extend{
+  background: url('image/header_bk copy.gif');
+  width: 100%;
+  height: 101px;
+  margin-left: 800px;
+
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#child-calender iframe{
+    height:700px;
+  }
+
+
+#account-statement{
+    width:35%;
+    float:left;
+      
+  }
+
+  #mouseRegion {
+    width: 15.625em;
+  }
+
+  #account-details {
+    width:70%;
+    float:left;
+    padding:10px;    
+    display: none;
+  }
+
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.section:nth-of-type(2) { -webkit-box-ordinal-group: 2; -webkit-order: 1; -ms-flex-order: 1; order: 1; }
+  
+  .finance .flexbox{
+    width: 90%;
+    margin: 0 auto;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
+
+  .finance #price{
+    width: 45%;
+  }
+
+   .finance #links{
+    width: 60%;
+    height: 100%;
+  }
+
+  .finance #links ul{
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 960px){
+
+  .flexbox{
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #child-welcome{
+    width: 650px;
+  }
+  .secondflexbox{
+    width: 94%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding-left: 5%;
+
+}
+  .secondflexbox #child-phone_book{
+      -webkit-align-self: flex-start;
+          -ms-flex-item-align: start;
+              align-self: flex-start;
+  
+  }
+}
+
+
+@media screen and (min-width: 1200px){
+  .finance #intro{
+  width: 80%;
+}
+  .flexbox{
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+}
+
+
+@media screen and (min-width: 1400px){
+.finance .flexbox{
+    width: 1400px;
+  }
+}

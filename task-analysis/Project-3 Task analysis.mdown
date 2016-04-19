@@ -1,0 +1,34 @@
+
+#Project-3 Task Analysis
+
+######Group menber: Craig Finnern | Hong Zhang | Joseph Arreola | Junfeng Wang
+
+
+
+####1. Login [Myiit portal ](https://my.iit.edu/)###
+
+![Myiit](../image/login.png "Myiit")
+###2. Navigate to Finances tab
+![Finances](../image/finances_tab.png "Finances")
+
+####3. Navigate to Manage Account section and click "Manage My Student Account"
+![student_account](../image/student_account.png)
+
+####4. Click "Manage My Account"
+![student_account](../image/click_again.png)
+####5. Navigate to Payments tab and click "Make a Payment"
+![myaccount_payment](../image/myaccount_payment.png)
+
+####6. Select Payment amount, date and click "Continnue"
+![select_amount](../image/select_amount.png)
+
+####7. Select Payment Method and click "select"
+![payament_method](../image/payament_method.png)
+
+####8. Confirm payment and click "Submit Payment"
+![submit_payment](../image/submit_payment.png)
+
+
+
+
+
