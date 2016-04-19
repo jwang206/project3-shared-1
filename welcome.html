@@ -1,70 +1,89 @@
 <!DOCTYPE html>
 <html class="welcome">
-   <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
-      <link rel="stylesheet" type="text/css" href="screen.css">
-      <title>Welcome</title>
-   </head>
-   <body>
-      <header>
-         <div id="extend"></div>
-      </header>
-      <nav>
-         <ul>
-            <li><a href="welcome.html"> Welcome </a></li>
-            <li><a href="#"> Academics </a></li>
-            <li><a href="#"> Student Life </a></li>
-            <li><a href="Financial.html"> Finances </a></li>
-            <li><a href="#"> Libray </a></li>
-            <li><a href="#"> Research </a></li>
-         </ul>
-      </nav>
-      <div class="flexbox" id="parent">
-         <div class="secondflexbox">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0" name="viewport">
+    <link href="screen.css" rel="stylesheet" type="text/css">
+    <title>Welcome</title>
+</head>
+
+<body>
+    <header>
+        <div id="extend"></div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="welcome.html">Welcome</a>
+            </li>
+            <li>
+                <a href="#">Academics</a>
+            </li>
+            <li>
+                <a href="#">Student Life</a>
+            </li>
+            <li>
+                <a href="Financial.html">Finances</a>
+            </li>
+            <li>
+                <a href="#">Libray</a>
+            </li>
+            <li>
+                <a href="#">Research</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="flexbox" id="parent">
+        <div class="secondflexbox">
             <div class="section" id="child-welcome">
-               <h3>Welcome to the IIT portal for all Newly Admitted Students.</h3>
-               <p>As a student at IIT, your myIIT account will be your primary vehicle to:</p>
-               <ol>
-                  <li>register for class</li>
-                  <li>check on your financial aid and other resources</li>
-                  <li>view your bill, make payments and manage your student account</li>
-                  <li>setup and check your email</li>
-                  <li>review classroom assignments on Blackboard</li>
-                  <li>learn about forthcoming lectures, student events, and volunteer activities</li>
-                  <li>plan your study abroad</li>
-                  <li>explore hundreds of course offerings</li>
-                  <li>chat with fellow students about the progress of their IPRO
-                     and much more
-                  </li>
-               </ol>
-               <p>Activate your UPass and Register @ <a href="https://www.ventrachicago.com/" target="_blank">Ventra</a></p>
+                <h3>Welcome to the IIT portal for all Newly Admitted
+                Students.</h3>
+                <p>As a student at IIT, your myIIT account will be your primary vehicle to:</p>
+                <ol>
+                    <li>register for class</li>
+                    <li>check on your financial aid and other resources</li>
+                    <li>view your bill, make payments and manage your student account
+                    </li>
+                    <li>setup and check your email</li>
+                    <li>review classroom assignments on Blackboard</li>
+                    <li>learn about forthcoming lectures, student events, and volunteer activities</li>
+                    <li>plan your study abroad</li>
+                    <li>explore hundreds of course offerings</li>
+                    <li>chat with fellow students about the progress of their IPRO and much more</li>
+                </ol>
+                <p>Activate your UPass and Register @ <a href="https://www.ventrachicago.com/" target="_blank">Ventra</a>
+                </p>
             </div>
             <div class="section" id="child-phone_book">
-               <h4 id="title">Phone Book</h4>
-               <form>
-                  <div id="role">
-                     Search by Role
-                     <label class="block"><input type="radio" name="role" value="Faculty"> Faculty</label>
-                     <label class="block"><input type="radio" name="role" value="Student"> Student</label>
-                  </div>
-                  <div id="name">
-                     First Name
-                     <input type="text" name="firstname">  	
-                     Last Name
-                     <input type="text" name="lastname">
-                  </div>
-                  <input id="submit_button" type="submit" value="Search" >
-               </form>
+                <h4 id="title">Phone Book</h4>
+                <form>
+                    <div id="role">
+                        Search by Role
+                        <label class="block">
+                            <input name="role" type="radio" value="Faculty"> Faculty</label>
+                        <label class="block">
+                            <input name="role" type="radio" value="Student"> Student</label>
+                    </div>
+                    <div id="name">
+                        First Name
+                        <input name="firstname" type="text"> Last Name
+                        <input name="lastname" type="text">
+                    </div>
+                    <input id="submit_button" type="submit" value="Search">
+                </form>
             </div>
-         </div>
-      </div>
-      <div class="section" id="child-calender">
-         <iframe src="https://www.google.com/calendar/embed?src=calendar%40iit.edu&amp;ctz=America/Chicago" ></iframe>
-      </div>
-      <footer>
-         <a id="top" onmouseover="window.status=''; return true;" href="#TOP"><B>Top</B></a>
-         <a id="iit" href="http://www.iit.edu"><img title="Illinois Institute of Technology" src="image/foot_logo.gif" alt="Illinois Institute of Technology"></a>
-      </footer>
-   </body>
+        </div>
+    </div>
+    <div class="section" id="child-calender">
+        <iframe src="https://www.google.com/calendar/embed?src=calendar%40iit.edu&amp;ctz=America/Chicago">
+        </iframe>
+    </div>
+    <footer>
+        <a href="#TOP" id="top" onmouseover="window.status=''; return true;"><b>Top</b></a>
+        <a href="http://www.iit.edu" id="iit"><img alt="Illinois Institute of Technology" src="image/foot_logo.gif" title="Illinois Institute of Technology">
+        </a>
+    </footer>
+</body>
+
 </html>
